@@ -14,12 +14,7 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": "fac857fe-e92a-4c1d-ac61-e8b0fc4e205c",
-            "ioValues": [
-                {
-                    "name": "number or geometry",
-                    "ioValue": "e06ea999-1ddb-4d47-82da-d3f96cb03fed"
-                }
-            ],
+            "ioValues": [],
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
@@ -258,8 +253,8 @@
         {
             "atomType": "Assembly",
             "name": "Assembly",
-            "x": 0.6620370370370371,
-            "y": 0.25277777777777777,
+            "x": 0.7106076210092688,
+            "y": 0.26111111111111107,
             "uniqueID": "e06ea999-1ddb-4d47-82da-d3f96cb03fed",
             "ioValues": [
                 {
@@ -290,7 +285,7 @@
             "ioValues": [
                 {
                     "name": "Input Geometry",
-                    "ioValue": "Infinity-4999-47c5-b72c-adb1e535a385"
+                    "ioValue": "2001e580-4999-47c5-b72c-adb1e535a385"
                 },
                 {
                     "name": "Input Number",
@@ -333,7 +328,7 @@
                     "ioValues": [
                         {
                             "name": "inputShape",
-                            "ioValue": "Infinity-4999-47c5-b72c-adb1e535a385"
+                            "ioValue": "2001e580-4999-47c5-b72c-adb1e535a385"
                         },
                         {
                             "name": "dist",
@@ -387,7 +382,7 @@
                     "ioValues": [
                         {
                             "name": "Shape 2",
-                            "ioValue": "Infinity-4999-47c5-b72c-adb1e535a385"
+                            "ioValue": "2001e580-4999-47c5-b72c-adb1e535a385"
                         }
                     ],
                     "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
@@ -401,7 +396,7 @@
                     "ioValues": [
                         {
                             "name": "geometry",
-                            "ioValue": "Infinity-4999-47c5-b72c-adb1e535a385"
+                            "ioValue": "2001e580-4999-47c5-b72c-adb1e535a385"
                         },
                         {
                             "name": "xDist",
@@ -475,7 +470,7 @@
                     "ioValues": [
                         {
                             "name": "geometry",
-                            "ioValue": "Infinity-4999-47c5-b72c-adb1e535a385"
+                            "ioValue": "2001e580-4999-47c5-b72c-adb1e535a385"
                         },
                         {
                             "name": "xDist",
@@ -1469,12 +1464,7 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": "c8329ef9-f657-4b81-a55a-bf298f0706ae",
-                    "ioValues": [
-                        {
-                            "name": "number or geometry",
-                            "ioValue": "26ecee4d-e8a9-40a8-8049-cfeb246337e7"
-                        }
-                    ],
+                    "ioValues": [],
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
@@ -1546,8 +1536,8 @@
                 {
                     "atomType": "Import",
                     "name": "Import",
-                    "x": 0.2447089947089947,
-                    "y": 0.7527777777777778,
+                    "x": 0.24074074074074073,
+                    "y": 0.6944444444444444,
                     "uniqueID": "d06d8285-887a-44e7-ad04-c183203a2bf1",
                     "ioValues": [],
                     "description": "Import Atom, let's you choose a type of file to import and use in your design.",
@@ -1578,8 +1568,8 @@
                 {
                     "atomType": "GitHubMolecule",
                     "name": "M8-Bolt",
-                    "x": 0.42460317460317465,
-                    "y": 0.8222222222222222,
+                    "x": 0.4119464469618949,
+                    "y": 0.825,
                     "uniqueID": "97bb81cf-b2a6-49be-b4b8-bf1139d652cd",
                     "ioValues": [],
                     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -1833,8 +1823,8 @@
                 {
                     "atomType": "Gcode",
                     "name": "Gcode",
-                    "x": 0.6216931216931216,
-                    "y": 0.2916666666666667,
+                    "x": 0.6220391349124613,
+                    "y": 0.2972222222222222,
                     "uniqueID": "2a0953f8-b41e-4d59-9f23-14034b46903a",
                     "ioValues": [
                         {
