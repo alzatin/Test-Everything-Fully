@@ -14,12 +14,7 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": "fac857fe-e92a-4c1d-ac61-e8b0fc4e205c",
-            "ioValues": [
-                {
-                    "name": "number or geometry",
-                    "ioValue": "e06ea999-1ddb-4d47-82da-d3f96cb03fed"
-                }
-            ],
+            "ioValues": [],
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
@@ -294,7 +289,7 @@
             "ioValues": [
                 {
                     "name": "Input Geometry",
-                    "ioValue": "Infinity-4999-47c5-b72c-adb1e535a385"
+                    "ioValue": "20e1e580-4999-47c5-b72c-adb1e535a385"
                 },
                 {
                     "name": "Input Number",
@@ -327,7 +322,7 @@
                     "ioValues": [
                         {
                             "name": "inputShape",
-                            "ioValue": "Infinity-4999-47c5-b72c-adb1e535a385"
+                            "ioValue": "20e1e580-4999-47c5-b72c-adb1e535a385"
                         },
                         {
                             "name": "dist",
@@ -381,7 +376,7 @@
                     "ioValues": [
                         {
                             "name": "Shape 2",
-                            "ioValue": "Infinity-4999-47c5-b72c-adb1e535a385"
+                            "ioValue": "20e1e580-4999-47c5-b72c-adb1e535a385"
                         }
                     ],
                     "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
@@ -395,7 +390,7 @@
                     "ioValues": [
                         {
                             "name": "geometry",
-                            "ioValue": "Infinity-4999-47c5-b72c-adb1e535a385"
+                            "ioValue": "20e1e580-4999-47c5-b72c-adb1e535a385"
                         },
                         {
                             "name": "xDist",
@@ -473,7 +468,7 @@
                     "ioValues": [
                         {
                             "name": "geometry",
-                            "ioValue": "Infinity-4999-47c5-b72c-adb1e535a385"
+                            "ioValue": "20e1e580-4999-47c5-b72c-adb1e535a385"
                         },
                         {
                             "name": "xDist",
@@ -1543,8 +1538,8 @@
                 {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 0.36574074074074076,
-                    "y": 0.39166666666666666,
+                    "x": 0.36096256684491984,
+                    "y": 0.3631123919308357,
                     "uniqueID": "cf9f00c2-54e8-4776-bca7-4c0ebb3a0531",
                     "ioValues": [
                         {
@@ -1605,8 +1600,8 @@
                 {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 0.4376930998970134,
-                    "y": 0.5638888888888889,
+                    "x": 0.43917112299465244,
+                    "y": 0.6023054755043228,
                     "uniqueID": "828581cb-e32f-4b86-9877-b8c18ac0d55a",
                     "ioValues": [
                         {
@@ -1856,8 +1851,8 @@
                 {
                     "atomType": "Assembly",
                     "name": "Assembly",
-                    "x": 0.7797619047619048,
-                    "y": 0.5972222222222222,
+                    "x": 0.7927807486631016,
+                    "y": 0.5446685878962536,
                     "uniqueID": "26ecee4d-e8a9-40a8-8049-cfeb246337e7",
                     "ioValues": [
                         {
@@ -1867,6 +1862,10 @@
                         {
                             "name": "Shape 3",
                             "ioValue": "fec58716-684b-4794-84f9-9bd778765d7d"
+                        },
+                        {
+                            "name": "Shape 4",
+                            "ioValue": "828581cb-e32f-4b86-9877-b8c18ac0d55a"
                         }
                     ],
                     "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
@@ -1874,8 +1873,8 @@
                 {
                     "atomType": "Gcode",
                     "name": "Gcode",
-                    "x": 0.6220391349124613,
-                    "y": 0.2972222222222222,
+                    "x": 0.5407754010695187,
+                    "y": 0.3371757925072046,
                     "uniqueID": "2a0953f8-b41e-4d59-9f23-14034b46903a",
                     "ioValues": [
                         {
@@ -1909,8 +1908,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.7473544973544973,
-                    "y": 0.3111111111111111,
+                    "x": 0.6544117647058824,
+                    "y": 0.29971181556195964,
                     "uniqueID": "fec58716-684b-4794-84f9-9bd778765d7d",
                     "ioValues": [
                         {
@@ -1961,6 +1960,13 @@
                     "ap2Primary": true,
                     "ap1ID": "d06d8285-887a-44e7-ad04-c183203a2bf1",
                     "ap2ID": "828581cb-e32f-4b86-9877-b8c18ac0d55a"
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "Shape 4",
+                    "ap2Primary": false,
+                    "ap1ID": "828581cb-e32f-4b86-9877-b8c18ac0d55a",
+                    "ap2ID": "26ecee4d-e8a9-40a8-8049-cfeb246337e7"
                 },
                 {
                     "ap1Name": "Geometry",
