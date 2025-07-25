@@ -345,7 +345,7 @@
                 {
                     "atomType": "Input",
                     "name": "Input Geometry",
-                    "x": 0.029699999999999997,
+                    "x": 0.025384615384615384,
                     "y": 0.3861111111111111,
                     "uniqueID": "9ed3aa86-5834-4d83-8935-c4a58f1d1cae",
                     "ioValues": [],
@@ -365,7 +365,7 @@
                 {
                     "atomType": "Input",
                     "name": "Input Number",
-                    "x": 0.029699999999999997,
+                    "x": 0.025384615384615384,
                     "y": 0.7277777777777777,
                     "uniqueID": "640c2f18-6623-492e-bfe4-86321314d06e",
                     "ioValues": [],
@@ -498,12 +498,12 @@
                     "uniqueID": "97a92ef6-dce1-43f1-854a-68cd16468a03",
                     "ioValues": [
                         {
-                            "name": "J",
-                            "ioValue": -1
-                        },
-                        {
                             "name": "K",
                             "ioValue": 15
+                        },
+                        {
+                            "name": "J",
+                            "ioValue": -1
                         }
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
@@ -2030,8 +2030,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.5839340885684862,
-            "y": 0.6277777777777778,
+            "x": 0.5848930481283422,
+            "y": 0.6109510086455331,
             "uniqueID": "8e901b4d-e891-4b45-8826-1ffd32213f9e",
             "ioValues": [
                 {
