@@ -5,7 +5,6 @@
     "y": 0,
     "uniqueID": "e0d756f0-22a3-4836-ba6e-2d41ddb214b5",
     "ioValues": [],
-    "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
     "topLevel": true,
     "allAtoms": [
         {
@@ -14,241 +13,7 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": "fac857fe-e92a-4c1d-ac61-e8b0fc4e205c",
-            "ioValues": [],
-            "description": "Connect geometry here to make it available in the next level up. "
-        },
-        {
-            "atomType": "Molecule",
-            "name": "Actions",
-            "x": 0.18121693121693122,
-            "y": 0.16666666666666666,
-            "uniqueID": "f8f94c02-834a-4293-8741-cf5c02ca0626",
-            "ioValues": [],
-            "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
-            "topLevel": false,
-            "allAtoms": [
-                {
-                    "atomType": "Output",
-                    "name": "Output",
-                    "x": 0.98,
-                    "y": 0.5,
-                    "uniqueID": "e429fd3d-2735-446e-af37-48934c66014a",
-                    "ioValues": [
-                        {
-                            "name": "number or geometry",
-                            "ioValue": "d0d84a2a-e976-4f53-ac51-a0b0ca30af79"
-                        }
-                    ],
-                    "description": "Connect geometry here to make it available in the next level up. "
-                },
-                {
-                    "atomType": "Rectangle",
-                    "name": "Rectangle",
-                    "x": 0.09126984126984126,
-                    "y": 0.32499999999999996,
-                    "uniqueID": "559b55f9-4305-4018-b4b9-fab4ade6c419",
-                    "ioValues": [
-                        {
-                            "name": "x length",
-                            "ioValue": 10
-                        },
-                        {
-                            "name": "y length",
-                            "ioValue": 10
-                        }
-                    ],
-                    "description": "Creates a new rectangle."
-                },
-                {
-                    "atomType": "Extrude",
-                    "name": "Extrude",
-                    "x": 0.1865079365079365,
-                    "y": 0.2583333333333333,
-                    "uniqueID": "93d562af-c6f9-4f72-8864-7f06bbe36f99",
-                    "ioValues": [
-                        {
-                            "name": "geometry",
-                            "ioValue": "559b55f9-4305-4018-b4b9-fab4ade6c419"
-                        },
-                        {
-                            "name": "height",
-                            "ioValue": 10
-                        }
-                    ],
-                    "description": "Extrudes a 2D shape. Input can be negitive. "
-                },
-                {
-                    "atomType": "Move",
-                    "name": "Move",
-                    "x": 0.30886243386243384,
-                    "y": 0.39444444444444443,
-                    "uniqueID": "65b9f2c8-e5d5-44b0-9b45-b81bb4065145",
-                    "ioValues": [
-                        {
-                            "name": "geometry",
-                            "ioValue": "93d562af-c6f9-4f72-8864-7f06bbe36f99"
-                        },
-                        {
-                            "name": "xDist",
-                            "ioValue": 15
-                        },
-                        {
-                            "name": "yDist",
-                            "ioValue": 0
-                        },
-                        {
-                            "name": "zDist",
-                            "ioValue": 0
-                        }
-                    ],
-                    "description": "Moves a shape laterally in X, Y, Z."
-                },
-                {
-                    "atomType": "Fusion",
-                    "name": "Fusion",
-                    "x": 0.39021164021164023,
-                    "y": 0.19722222222222222,
-                    "uniqueID": "374cf029-1762-478a-ad48-57f3df36e0fb",
-                    "ioValues": [
-                        {
-                            "name": "Shape 1",
-                            "ioValue": "93d562af-c6f9-4f72-8864-7f06bbe36f99"
-                        },
-                        {
-                            "name": "Shape 2",
-                            "ioValue": "65b9f2c8-e5d5-44b0-9b45-b81bb4065145"
-                        }
-                    ],
-                    "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
-                    "unionType": "Fusion"
-                },
-                {
-                    "atomType": "Rotate",
-                    "name": "Rotate",
-                    "x": 0.49404761904761907,
-                    "y": 0.4972222222222222,
-                    "uniqueID": "e665bb77-69bb-4a98-b1d1-9abc22132fa3",
-                    "ioValues": [
-                        {
-                            "name": "geometry",
-                            "ioValue": "347800c8-c029-45ce-873a-dcfea518a412"
-                        },
-                        {
-                            "name": "x-axis degrees",
-                            "ioValue": 0
-                        },
-                        {
-                            "name": "y-axis degrees",
-                            "ioValue": 0
-                        },
-                        {
-                            "name": "z-axis degrees",
-                            "ioValue": 180
-                        }
-                    ],
-                    "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
-                },
-                {
-                    "atomType": "Assembly",
-                    "name": "Assembly",
-                    "x": 0.6435185185185185,
-                    "y": 0.3416666666666667,
-                    "uniqueID": "d0d84a2a-e976-4f53-ac51-a0b0ca30af79",
-                    "ioValues": [
-                        {
-                            "name": "Shape 1",
-                            "ioValue": "e665bb77-69bb-4a98-b1d1-9abc22132fa3"
-                        },
-                        {
-                            "name": "Shape 2",
-                            "ioValue": "374cf029-1762-478a-ad48-57f3df36e0fb"
-                        }
-                    ],
-                    "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
-                },
-                {
-                    "atomType": "Color",
-                    "name": "Color",
-                    "x": 0.40145502645502645,
-                    "y": 0.4444444444444444,
-                    "uniqueID": "347800c8-c029-45ce-873a-dcfea518a412",
-                    "ioValues": [
-                        {
-                            "name": "geometry",
-                            "ioValue": "65b9f2c8-e5d5-44b0-9b45-b81bb4065145"
-                        }
-                    ],
-                    "description": "Changes the color of the shape.",
-                    "selectedColorIndex": 3
-                }
-            ],
-            "allConnectors": [
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "geometry",
-                    "ap2Primary": true,
-                    "ap1ID": "559b55f9-4305-4018-b4b9-fab4ade6c419",
-                    "ap2ID": "93d562af-c6f9-4f72-8864-7f06bbe36f99"
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "geometry",
-                    "ap2Primary": true,
-                    "ap1ID": "93d562af-c6f9-4f72-8864-7f06bbe36f99",
-                    "ap2ID": "65b9f2c8-e5d5-44b0-9b45-b81bb4065145"
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "Shape 1",
-                    "ap2Primary": false,
-                    "ap1ID": "93d562af-c6f9-4f72-8864-7f06bbe36f99",
-                    "ap2ID": "374cf029-1762-478a-ad48-57f3df36e0fb"
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "Shape 2",
-                    "ap2Primary": false,
-                    "ap1ID": "65b9f2c8-e5d5-44b0-9b45-b81bb4065145",
-                    "ap2ID": "374cf029-1762-478a-ad48-57f3df36e0fb"
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "geometry",
-                    "ap2Primary": true,
-                    "ap1ID": "65b9f2c8-e5d5-44b0-9b45-b81bb4065145",
-                    "ap2ID": "347800c8-c029-45ce-873a-dcfea518a412"
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "Shape 2",
-                    "ap2Primary": false,
-                    "ap1ID": "374cf029-1762-478a-ad48-57f3df36e0fb",
-                    "ap2ID": "d0d84a2a-e976-4f53-ac51-a0b0ca30af79"
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "Shape 1",
-                    "ap2Primary": false,
-                    "ap1ID": "e665bb77-69bb-4a98-b1d1-9abc22132fa3",
-                    "ap2ID": "d0d84a2a-e976-4f53-ac51-a0b0ca30af79"
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "number or geometry",
-                    "ap2Primary": false,
-                    "ap1ID": "d0d84a2a-e976-4f53-ac51-a0b0ca30af79",
-                    "ap2ID": "e429fd3d-2735-446e-af37-48934c66014a"
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "geometry",
-                    "ap2Primary": true,
-                    "ap1ID": "347800c8-c029-45ce-873a-dcfea518a412",
-                    "ap2ID": "e665bb77-69bb-4a98-b1d1-9abc22132fa3"
-                }
-            ],
-            "fileTypeVersion": 1,
-            "compiledBom": {}
+            "ioValues": []
         },
         {
             "atomType": "Assembly",
@@ -259,26 +24,981 @@
             "ioValues": [
                 {
                     "name": "Shape 1",
-                    "ioValue": "f8f94c02-834a-4293-8741-cf5c02ca0626"
+                    "ioValue": {
+                        "geometry": [
+                            {
+                                "geometry": "rotate-move-extrude-rectangle-10-10-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10-15-0-0-0-0-180",
+                                "dimension": "3D",
+                                "plane": {
+                                    "origin": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "xDir": [
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "normal": [
+                                        0,
+                                        0,
+                                        1
+                                    ]
+                                },
+                                "color": "#FFD600",
+                                "tags": [],
+                                "bom": []
+                            },
+                            {
+                                "geometry": [
+                                    {
+                                        "geometry": "expand-0-fuse-extrude-rectangle-10-10-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10-move-extrude-rectangle-10-10-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10-15-0-0",
+                                        "tags": [],
+                                        "color": "#aad7f2",
+                                        "bom": [],
+                                        "plane": {
+                                            "origin": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "xDir": [
+                                                1,
+                                                0,
+                                                0
+                                            ],
+                                            "normal": [
+                                                0,
+                                                0,
+                                                1
+                                            ]
+                                        },
+                                        "dimension": "3D"
+                                    },
+                                    {
+                                        "geometry": "expand-1-fuse-extrude-rectangle-10-10-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10-move-extrude-rectangle-10-10-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10-15-0-0",
+                                        "tags": [],
+                                        "color": "#aad7f2",
+                                        "bom": [],
+                                        "plane": {
+                                            "origin": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "xDir": [
+                                                1,
+                                                0,
+                                                0
+                                            ],
+                                            "normal": [
+                                                0,
+                                                0,
+                                                1
+                                            ]
+                                        },
+                                        "dimension": "3D"
+                                    }
+                                ],
+                                "tags": [],
+                                "color": "#aad7f2",
+                                "bom": [],
+                                "plane": {
+                                    "origin": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "xDir": [
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "normal": [
+                                        0,
+                                        0,
+                                        1
+                                    ]
+                                }
+                            }
+                        ],
+                        "plane": {
+                            "origin": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "xDir": [
+                                1,
+                                0,
+                                0
+                            ],
+                            "normal": [
+                                0,
+                                0,
+                                1
+                            ]
+                        },
+                        "tags": [],
+                        "color": "#aad7f2",
+                        "bom": [],
+                        "dimension": "3D"
+                    }
                 },
                 {
                     "name": "Shape 2",
-                    "ioValue": "4f7f7078-d932-4bd4-a14b-d9a726abafdf"
+                    "ioValue": {
+                        "geometry": [
+                            {
+                                "geometry": "move-move-extrude-text-H-{\"startX\":0,\"startY\":0,\"fontSize\":10,\"font\":\"ANTON\"}-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10--15--4-0-0--15-0",
+                                "dimension": "3D",
+                                "tags": [],
+                                "plane": {
+                                    "origin": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "xDir": [
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "normal": [
+                                        0,
+                                        0,
+                                        1
+                                    ]
+                                },
+                                "color": "#aad7f2",
+                                "bom": []
+                            },
+                            {
+                                "geometry": "move-move-extrude-polysides-5-6-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10-15-0-0-0--15-0",
+                                "dimension": "3D",
+                                "tags": [],
+                                "plane": {
+                                    "origin": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "xDir": [
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "normal": [
+                                        0,
+                                        0,
+                                        1
+                                    ]
+                                },
+                                "color": "#aad7f2",
+                                "bom": []
+                            },
+                            {
+                                "geometry": "move-extrude-circle-5-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10-0--15-0",
+                                "dimension": "3D",
+                                "tags": [],
+                                "plane": {
+                                    "origin": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "xDir": [
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "normal": [
+                                        0,
+                                        0,
+                                        1
+                                    ]
+                                },
+                                "color": "#aad7f2",
+                                "bom": []
+                            }
+                        ],
+                        "plane": {
+                            "origin": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "xDir": [
+                                1,
+                                0,
+                                0
+                            ],
+                            "normal": [
+                                0,
+                                0,
+                                1
+                            ]
+                        },
+                        "color": "#aad7f2",
+                        "tags": [],
+                        "bom": []
+                    }
                 },
                 {
                     "name": "Shape 3",
-                    "ioValue": "b0e28b43-a4ea-4b94-bcb6-e6e901f76dd0"
+                    "ioValue": {
+                        "geometry": [
+                            {
+                                "geometry": "move-extrude-cut-rectangle-10-10-circle-2.5-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10-0-15-0",
+                                "dimension": "3D",
+                                "plane": {
+                                    "origin": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "xDir": [
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "normal": [
+                                        0,
+                                        0,
+                                        1
+                                    ]
+                                },
+                                "color": "#aad7f2",
+                                "tags": [],
+                                "bom": []
+                            },
+                            {
+                                "geometry": "move-move-extrude-intersect-circle-2.5-rectangle-10-10-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10-15-0-0-0-15-0",
+                                "tags": [],
+                                "color": "#aad7f2",
+                                "plane": {
+                                    "origin": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "xDir": [
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "normal": [
+                                        0,
+                                        0,
+                                        1
+                                    ]
+                                },
+                                "bom": [],
+                                "dimension": "3D"
+                            },
+                            {
+                                "geometry": "move-move-singular-0--15-0-0-0-15-0",
+                                "dimension": "3D",
+                                "tags": [],
+                                "plane": {
+                                    "origin": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "xDir": [
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "normal": [
+                                        0,
+                                        0,
+                                        1
+                                    ]
+                                },
+                                "color": "#aad7f2",
+                                "bom": []
+                            },
+                            {
+                                "geometry": "move-extrude-move-shrinkWrap-fuse-move-circle-2.5-8-0-0-rectangle-10-10-50-27-0-0-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10-0-15-0",
+                                "dimension": "3D",
+                                "tags": [],
+                                "color": "#aad7f2",
+                                "plane": {
+                                    "origin": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "xDir": [
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "normal": [
+                                        0,
+                                        0,
+                                        1
+                                    ]
+                                },
+                                "bom": [
+                                    []
+                                ]
+                            }
+                        ],
+                        "plane": {
+                            "origin": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "xDir": [
+                                1,
+                                0,
+                                0
+                            ],
+                            "normal": [
+                                0,
+                                0,
+                                1
+                            ]
+                        },
+                        "color": "#aad7f2",
+                        "tags": [],
+                        "bom": [
+                            []
+                        ]
+                    }
                 },
                 {
                     "name": "Shape 4",
-                    "ioValue": "3352a0ec-8df2-4c40-b85a-cb4ca6657ef7"
+                    "ioValue": null
                 },
                 {
                     "name": "Shape 5",
-                    "ioValue": "8e901b4d-e891-4b45-8826-1ffd32213f9e"
+                    "ioValue": {
+                        "geometry": [
+                            {
+                                "geometry": [
+                                    {
+                                        "geometry": "move-extrude-rectangle-10-10-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10-0-29-0",
+                                        "dimension": "3D",
+                                        "plane": {
+                                            "origin": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "xDir": [
+                                                1,
+                                                0,
+                                                0
+                                            ],
+                                            "normal": [
+                                                0,
+                                                0,
+                                                1
+                                            ]
+                                        },
+                                        "color": "#aad7f2",
+                                        "tags": [],
+                                        "bom": []
+                                    }
+                                ],
+                                "plane": {
+                                    "origin": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "xDir": [
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "normal": [
+                                        0,
+                                        0,
+                                        1
+                                    ]
+                                },
+                                "color": "#aad7f2",
+                                "tags": [],
+                                "bom": []
+                            },
+                            {
+                                "geometry": "move-move-extrude-rectangle-10-10-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10-15-0-0-0-29-0",
+                                "dimension": "3D",
+                                "plane": {
+                                    "origin": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "xDir": [
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "normal": [
+                                        0,
+                                        0,
+                                        1
+                                    ]
+                                },
+                                "color": "#aad7f2",
+                                "tags": [],
+                                "bom": []
+                            },
+                            {
+                                "geometry": [
+                                    {
+                                        "geometry": "move-move-singular-1-26-0-0-0-29-0",
+                                        "tags": [],
+                                        "color": "#aad7f2",
+                                        "plane": {
+                                            "origin": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "xDir": [
+                                                1,
+                                                0,
+                                                0
+                                            ],
+                                            "normal": [
+                                                0,
+                                                0,
+                                                1
+                                            ]
+                                        },
+                                        "bom": [],
+                                        "dimension": "3D"
+                                    },
+                                    {
+                                        "geometry": "move-move-singular-2-26-0-0-0-29-0",
+                                        "tags": [
+                                            "aTag"
+                                        ],
+                                        "color": "#A3CE5B",
+                                        "plane": {
+                                            "origin": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "xDir": [
+                                                1,
+                                                0,
+                                                0
+                                            ],
+                                            "normal": [
+                                                0,
+                                                0,
+                                                1
+                                            ]
+                                        },
+                                        "bom": [],
+                                        "dimension": "3D"
+                                    }
+                                ],
+                                "plane": {
+                                    "origin": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "xDir": [
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "normal": [
+                                        0,
+                                        0,
+                                        1
+                                    ]
+                                },
+                                "color": "#A3CF5B",
+                                "tags": [
+                                    "aNewTag"
+                                ],
+                                "bom": []
+                            },
+                            {
+                                "geometry": "move-move-extrude-rectangle-10-10-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10--15-0-0-0-29-0",
+                                "dimension": "3D",
+                                "plane": {
+                                    "origin": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "xDir": [
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "normal": [
+                                        0,
+                                        0,
+                                        1
+                                    ]
+                                },
+                                "color": "#aad7f2",
+                                "tags": [],
+                                "bom": []
+                            }
+                        ],
+                        "plane": {
+                            "origin": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "xDir": [
+                                1,
+                                0,
+                                0
+                            ],
+                            "normal": [
+                                0,
+                                0,
+                                1
+                            ]
+                        },
+                        "color": "#aad7f2",
+                        "tags": [],
+                        "bom": []
+                    }
+                }
+            ]
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.3511904761904762,
+            "y": 0.34444444444444444,
+            "uniqueID": "4f7f7078-d932-4bd4-a14b-d9a726abafdf",
+            "ioValues": [
+                {
+                    "name": "xDist",
+                    "ioValue": 0,
+                    "currentEquation": null
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": -15,
+                    "currentEquation": null
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0,
+                    "currentEquation": null
+                }
+            ]
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.4887566137566138,
+            "y": 0.5138888888888888,
+            "uniqueID": "b0e28b43-a4ea-4b94-bcb6-e6e901f76dd0",
+            "ioValues": [
+                {
+                    "name": "xDist",
+                    "ioValue": 0,
+                    "currentEquation": null
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 15,
+                    "currentEquation": null
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0,
+                    "currentEquation": null
+                }
+            ]
+        },
+        {
+            "atomType": "Rectangle",
+            "name": "Rectangle",
+            "x": 0.07473544973544974,
+            "y": 0.8333333333333334,
+            "uniqueID": "30e7e952-806b-4632-a0fb-1b3c1b0871d0",
+            "ioValues": [
+                {
+                    "name": "x length",
+                    "ioValue": 10,
+                    "currentEquation": null
+                },
+                {
+                    "name": "y length",
+                    "ioValue": 10,
+                    "currentEquation": null
+                }
+            ]
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.22354497354497355,
+            "y": 0.7222222222222222,
+            "uniqueID": "20e1e580-4999-47c5-b72c-adb1e535a385",
+            "ioValues": [
+                {
+                    "name": "height",
+                    "ioValue": 10,
+                    "currentEquation": null
+                }
+            ]
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.6263227513227514,
+            "y": 0.7333333333333334,
+            "uniqueID": "3352a0ec-8df2-4c40-b85a-cb4ca6657ef7",
+            "ioValues": [
+                {
+                    "name": "xDist",
+                    "ioValue": 0,
+                    "currentEquation": null
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": -30,
+                    "currentEquation": null
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0,
+                    "currentEquation": null
+                }
+            ]
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.5848930481283422,
+            "y": 0.6109510086455331,
+            "uniqueID": "8e901b4d-e891-4b45-8826-1ffd32213f9e",
+            "ioValues": [
+                {
+                    "name": "xDist",
+                    "ioValue": 0,
+                    "currentEquation": null
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 29,
+                    "currentEquation": null
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0,
+                    "currentEquation": null
+                }
+            ]
+        },
+        {
+            "atomType": "Molecule",
+            "name": "Actions",
+            "x": 0.18121693121693122,
+            "y": 0.16666666666666666,
+            "uniqueID": "f8f94c02-834a-4293-8741-cf5c02ca0626",
+            "ioValues": [],
+            "topLevel": false,
+            "allAtoms": [
+                {
+                    "atomType": "Output",
+                    "name": "Output",
+                    "x": 0.98,
+                    "y": 0.5,
+                    "uniqueID": "e429fd3d-2735-446e-af37-48934c66014a",
+                    "ioValues": []
+                },
+                {
+                    "atomType": "Rectangle",
+                    "name": "Rectangle",
+                    "x": 0.09126984126984126,
+                    "y": 0.32499999999999996,
+                    "uniqueID": "559b55f9-4305-4018-b4b9-fab4ade6c419",
+                    "ioValues": [
+                        {
+                            "name": "x length",
+                            "ioValue": 10,
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "y length",
+                            "ioValue": 10,
+                            "currentEquation": null
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Extrude",
+                    "name": "Extrude",
+                    "x": 0.1865079365079365,
+                    "y": 0.2583333333333333,
+                    "uniqueID": "93d562af-c6f9-4f72-8864-7f06bbe36f99",
+                    "ioValues": [
+                        {
+                            "name": "height",
+                            "ioValue": 10,
+                            "currentEquation": null
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.30886243386243384,
+                    "y": 0.39444444444444443,
+                    "uniqueID": "65b9f2c8-e5d5-44b0-9b45-b81bb4065145",
+                    "ioValues": [
+                        {
+                            "name": "xDist",
+                            "ioValue": 15,
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": 0,
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 0,
+                            "currentEquation": null
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Fusion",
+                    "name": "Fusion",
+                    "x": 0.39021164021164023,
+                    "y": 0.19722222222222222,
+                    "uniqueID": "374cf029-1762-478a-ad48-57f3df36e0fb",
+                    "ioValues": [
+                        {
+                            "name": "Shape 1",
+                            "ioValue": {
+                                "geometry": "extrude-rectangle-10-10-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10",
+                                "dimension": "3D",
+                                "plane": {
+                                    "origin": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "xDir": [
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "normal": [
+                                        0,
+                                        0,
+                                        1
+                                    ]
+                                },
+                                "color": "#aad7f2",
+                                "tags": [],
+                                "bom": []
+                            }
+                        },
+                        {
+                            "name": "Shape 2",
+                            "ioValue": {
+                                "geometry": "move-extrude-rectangle-10-10-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10-15-0-0",
+                                "dimension": "3D",
+                                "plane": {
+                                    "origin": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "xDir": [
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "normal": [
+                                        0,
+                                        0,
+                                        1
+                                    ]
+                                },
+                                "color": "#aad7f2",
+                                "tags": [],
+                                "bom": []
+                            }
+                        }
+                    ],
+                    "unionType": "Fusion"
+                },
+                {
+                    "atomType": "Rotate",
+                    "name": "Rotate",
+                    "x": 0.49404761904761907,
+                    "y": 0.4972222222222222,
+                    "uniqueID": "e665bb77-69bb-4a98-b1d1-9abc22132fa3",
+                    "ioValues": [
+                        {
+                            "name": "x-axis degrees",
+                            "ioValue": 0,
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "y-axis degrees",
+                            "ioValue": 0,
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "z-axis degrees",
+                            "ioValue": 180,
+                            "currentEquation": null
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Assembly",
+                    "name": "Assembly",
+                    "x": 0.6435185185185185,
+                    "y": 0.3416666666666667,
+                    "uniqueID": "d0d84a2a-e976-4f53-ac51-a0b0ca30af79",
+                    "ioValues": [
+                        {
+                            "name": "Shape 1",
+                            "ioValue": {
+                                "geometry": "rotate-move-extrude-rectangle-10-10-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10-15-0-0-0-0-180",
+                                "dimension": "3D",
+                                "plane": {
+                                    "origin": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "xDir": [
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "normal": [
+                                        0,
+                                        0,
+                                        1
+                                    ]
+                                },
+                                "color": "#FFD600",
+                                "tags": [],
+                                "bom": []
+                            }
+                        },
+                        {
+                            "name": "Shape 2",
+                            "ioValue": {
+                                "geometry": "fuse-extrude-rectangle-10-10-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10-move-extrude-rectangle-10-10-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10-15-0-0",
+                                "tags": [],
+                                "bom": [],
+                                "plane": {
+                                    "origin": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "xDir": [
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "normal": [
+                                        0,
+                                        0,
+                                        1
+                                    ]
+                                },
+                                "color": "#aad7f2",
+                                "dimension": "3D"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Color",
+                    "name": "Color",
+                    "x": 0.40145502645502645,
+                    "y": 0.4444444444444444,
+                    "uniqueID": "347800c8-c029-45ce-873a-dcfea518a412",
+                    "ioValues": [],
+                    "selectedColorIndex": 3
                 }
             ],
-            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
+            "allConnectors": [
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap1ID": "559b55f9-4305-4018-b4b9-fab4ade6c419",
+                    "ap2ID": "93d562af-c6f9-4f72-8864-7f06bbe36f99"
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap1ID": "93d562af-c6f9-4f72-8864-7f06bbe36f99",
+                    "ap2ID": "65b9f2c8-e5d5-44b0-9b45-b81bb4065145"
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "Shape 1",
+                    "ap1ID": "93d562af-c6f9-4f72-8864-7f06bbe36f99",
+                    "ap2ID": "374cf029-1762-478a-ad48-57f3df36e0fb"
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "Shape 2",
+                    "ap1ID": "65b9f2c8-e5d5-44b0-9b45-b81bb4065145",
+                    "ap2ID": "374cf029-1762-478a-ad48-57f3df36e0fb"
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap1ID": "65b9f2c8-e5d5-44b0-9b45-b81bb4065145",
+                    "ap2ID": "347800c8-c029-45ce-873a-dcfea518a412"
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "Shape 2",
+                    "ap1ID": "374cf029-1762-478a-ad48-57f3df36e0fb",
+                    "ap2ID": "d0d84a2a-e976-4f53-ac51-a0b0ca30af79"
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "Shape 1",
+                    "ap1ID": "e665bb77-69bb-4a98-b1d1-9abc22132fa3",
+                    "ap2ID": "d0d84a2a-e976-4f53-ac51-a0b0ca30af79"
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap1ID": "d0d84a2a-e976-4f53-ac51-a0b0ca30af79",
+                    "ap2ID": "e429fd3d-2735-446e-af37-48934c66014a"
+                },
+                {
+                    "ap1Name": "color",
+                    "ap2Name": "geometry",
+                    "ap1ID": "347800c8-c029-45ce-873a-dcfea518a412",
+                    "ap2ID": "e665bb77-69bb-4a98-b1d1-9abc22132fa3"
+                }
+            ],
+            "fileTypeVersion": 1,
+            "compiledBom": []
         },
         {
             "atomType": "Molecule",
@@ -288,15 +1008,11 @@
             "uniqueID": "6ca87a2c-5604-4e28-8e39-f4e3db22b39b",
             "ioValues": [
                 {
-                    "name": "Input Geometry",
-                    "ioValue": "2001e580-4999-47c5-b72c-adb1e535a385"
-                },
-                {
                     "name": "Input Number",
-                    "ioValue": 15
+                    "ioValue": 15,
+                    "currentEquation": null
                 }
             ],
-            "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
             "topLevel": false,
             "allAtoms": [
                 {
@@ -305,13 +1021,7 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": "faf86338-1436-4de4-acce-80039d574fe2",
-                    "ioValues": [
-                        {
-                            "name": "number or geometry",
-                            "ioValue": "214ba78e-4c3d-4082-b7e9-f02518df95c4"
-                        }
-                    ],
-                    "description": "Connect geometry here to make it available in the next level up. "
+                    "ioValues": []
                 },
                 {
                     "atomType": "Code",
@@ -321,19 +1031,16 @@
                     "uniqueID": "d8170d63-5f0b-4c4c-901e-560b8425c7f5",
                     "ioValues": [
                         {
-                            "name": "inputShape",
-                            "ioValue": "2001e580-4999-47c5-b72c-adb1e535a385"
-                        },
-                        {
                             "name": "dist",
-                            "ioValue": 10
+                            "ioValue": 10,
+                            "currentEquation": null
                         },
                         {
                             "name": "height",
-                            "ioValue": 10
+                            "ioValue": 10,
+                            "currentEquation": null
                         }
                     ],
-                    "description": "Defines a Replicad code block.",
                     "codeVersion": 1,
                     "code": " \n      //Inputs:[inputShape, dist, height]\n      //This defines the molecules inputs and creates variables with the same names which can be referenced in the code\n      \n      //Takes the address and gets the shape from the library\n      let importedShape = library[inputShape]\n      \n      //This makes a new copy of of the shape (to prevent garbage collection issues),\n      //and moves it in the X direction. Note that this will not work if the input is an assembly\n      let movedShape = importedShape.geometry[0].clone().translate([dist,0,0])\n      \n      //Console.log works for debugging to better see what is happening under the hood\n      console.log(\"Shape:\")\n      console.log(importedShape);\n      \n      //Shapes stored in the library have tags, a color, a plane, and a bill of materials like this. We don't modify them here\n      let shape1 = {\n        geometry: [movedShape],\n        tags: importedShape.tags,\n        color: importedShape.color,\n        plane: importedShape.plane,\n        bom: importedShape.bom\n      }\n      \n      //We could at this point return shape1 as a complete shape and it will be automatically written to the library for us\n      //return shape1\n      \n      //We can also create a new shape from scratch\n      let createdRectangle = replicad.drawRectangle(5,7)\n      //This is the plane we are going to put our new shape on\n      const newPlane = new replicad.Plane().pivot(0, 'Y');\n      //And we extrude the shape to make it 3D\n      let createdShape = createdRectangle.sketchOnPlane(newPlane).extrude(height)\n      \n      //For our new geometry we need to define the tags, color, plane, etc\n      let shape2 = {\n          geometry: [createdShape], \n          tags: [\"aTag\"],\n          color: '#A3CE5B',\n          plane: newPlane,\n          bom: []\n      }\n      \n      //Then we can return our created shape in just the same way\n      //return shape2\n      \n      //If we want to return both shapes at once, we can create an assembly with them\n      let anAssembly = {\n        geometry: [shape1, shape2], \n        tags: [\"aNewTag\"],\n        color: '#A3CF5B',\n        plane: newPlane,\n        bom: []\n      }\n      \n      //And we can return that in the same way\n      return anAssembly\n      \n      \n          /**\n          To Use the Code Atom, enter your inputs to the input list a.e Inputs:[shape, height]\n          If your input is connected to another atom with a replicad geometry you can access its geometry by looking up its ID in your library. a.e library[Input1].geometry[0] \n          Use any replicad available methods to modify your geometry. Learn more about all of the available methods at \n          https://replicad.xyz/docs/introapp/UserGuide.html \n          Return a replicad object that includes geometry, color, tags and plane. \n      \n      \n          Example Code Atom:\n      \n            Inputs:[shape, x];\n      \n            let finalShape = library[shape].geometry[0].clone.translate[x,0,0]\n      \n            return {geometry: finalShape, color: library[shape].color, plane: library[shape].plane, tags: library[shape].tags }\n      \n            - See more examples at _______ \n      \n      \n          */\n      "
                 },
@@ -344,7 +1051,6 @@
                     "y": 0.3861111111111111,
                     "uniqueID": "9ed3aa86-5834-4d83-8935-c4a58f1d1cae",
                     "ioValues": [],
-                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
                     "type": "number"
                 },
                 {
@@ -354,7 +1060,6 @@
                     "y": 0.8916666666666667,
                     "uniqueID": "329a1c38-1fd0-442b-ae54-3e0751a12734",
                     "ioValues": [],
-                    "description": "Defines a mathematical constant.",
                     "value": -1
                 },
                 {
@@ -364,7 +1069,6 @@
                     "y": 0.7277777777777777,
                     "uniqueID": "640c2f18-6623-492e-bfe4-86321314d06e",
                     "ioValues": [],
-                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
                     "type": "number"
                 },
                 {
@@ -376,10 +1080,32 @@
                     "ioValues": [
                         {
                             "name": "Shape 2",
-                            "ioValue": "2001e580-4999-47c5-b72c-adb1e535a385"
+                            "ioValue": {
+                                "geometry": "extrude-rectangle-10-10-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10",
+                                "dimension": "3D",
+                                "plane": {
+                                    "origin": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "xDir": [
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "normal": [
+                                        0,
+                                        0,
+                                        1
+                                    ]
+                                },
+                                "color": "#aad7f2",
+                                "tags": [],
+                                "bom": []
+                            }
                         }
-                    ],
-                    "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
+                    ]
                 },
                 {
                     "atomType": "Move",
@@ -389,23 +1115,21 @@
                     "uniqueID": "42223202-21a0-43a9-b344-598708bd9a6e",
                     "ioValues": [
                         {
-                            "name": "geometry",
-                            "ioValue": "2001e580-4999-47c5-b72c-adb1e535a385"
-                        },
-                        {
                             "name": "xDist",
-                            "ioValue": 15
+                            "ioValue": 15,
+                            "currentEquation": null
                         },
                         {
                             "name": "yDist",
-                            "ioValue": 0
+                            "ioValue": 0,
+                            "currentEquation": null
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 0
+                            "ioValue": 0,
+                            "currentEquation": null
                         }
-                    ],
-                    "description": "Moves a shape laterally in X, Y, Z."
+                    ]
                 },
                 {
                     "atomType": "Assembly",
@@ -416,22 +1140,190 @@
                     "ioValues": [
                         {
                             "name": "Shape 1",
-                            "ioValue": "f37fc0cd-4908-48ef-9028-353b3a9a5814"
+                            "ioValue": {
+                                "geometry": [
+                                    {
+                                        "geometry": "extrude-rectangle-10-10-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10",
+                                        "dimension": "3D",
+                                        "plane": {
+                                            "origin": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "xDir": [
+                                                1,
+                                                0,
+                                                0
+                                            ],
+                                            "normal": [
+                                                0,
+                                                0,
+                                                1
+                                            ]
+                                        },
+                                        "color": "#aad7f2",
+                                        "tags": [],
+                                        "bom": []
+                                    }
+                                ],
+                                "plane": {
+                                    "origin": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "xDir": [
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "normal": [
+                                        0,
+                                        0,
+                                        1
+                                    ]
+                                },
+                                "tags": [],
+                                "color": "#aad7f2",
+                                "bom": [],
+                                "dimension": "2D"
+                            }
                         },
                         {
                             "name": "Shape 2",
-                            "ioValue": "42223202-21a0-43a9-b344-598708bd9a6e"
+                            "ioValue": {
+                                "geometry": "move-extrude-rectangle-10-10-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10-15-0-0",
+                                "dimension": "3D",
+                                "plane": {
+                                    "origin": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "xDir": [
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "normal": [
+                                        0,
+                                        0,
+                                        1
+                                    ]
+                                },
+                                "color": "#aad7f2",
+                                "tags": [],
+                                "bom": []
+                            }
                         },
                         {
                             "name": "Shape 3",
-                            "ioValue": "34637e91-fdfe-4301-9152-bcfb6f63ee32"
+                            "ioValue": {
+                                "geometry": [
+                                    {
+                                        "geometry": "move-singular-1-26-0-0",
+                                        "tags": [],
+                                        "color": "#aad7f2",
+                                        "plane": {
+                                            "origin": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "xDir": [
+                                                1,
+                                                0,
+                                                0
+                                            ],
+                                            "normal": [
+                                                0,
+                                                0,
+                                                1
+                                            ]
+                                        },
+                                        "bom": [],
+                                        "dimension": "3D"
+                                    },
+                                    {
+                                        "geometry": "move-singular-2-26-0-0",
+                                        "tags": [
+                                            "aTag"
+                                        ],
+                                        "color": "#A3CE5B",
+                                        "plane": {
+                                            "origin": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "xDir": [
+                                                1,
+                                                0,
+                                                0
+                                            ],
+                                            "normal": [
+                                                0,
+                                                0,
+                                                1
+                                            ]
+                                        },
+                                        "bom": [],
+                                        "dimension": "3D"
+                                    }
+                                ],
+                                "plane": {
+                                    "origin": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "xDir": [
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "normal": [
+                                        0,
+                                        0,
+                                        1
+                                    ]
+                                },
+                                "color": "#A3CF5B",
+                                "tags": [
+                                    "aNewTag"
+                                ],
+                                "bom": []
+                            }
                         },
                         {
                             "name": "Shape 4",
-                            "ioValue": "ca6ac38a-c7cd-47a9-9e9d-91277b50aa32"
+                            "ioValue": {
+                                "geometry": "move-extrude-rectangle-10-10-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10--15-0-0",
+                                "dimension": "3D",
+                                "plane": {
+                                    "origin": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "xDir": [
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "normal": [
+                                        0,
+                                        0,
+                                        1
+                                    ]
+                                },
+                                "color": "#aad7f2",
+                                "tags": [],
+                                "bom": []
+                            }
                         }
-                    ],
-                    "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
+                    ]
                 },
                 {
                     "atomType": "Move",
@@ -441,23 +1333,21 @@
                     "uniqueID": "34637e91-fdfe-4301-9152-bcfb6f63ee32",
                     "ioValues": [
                         {
-                            "name": "geometry",
-                            "ioValue": "d8170d63-5f0b-4c4c-901e-560b8425c7f5"
-                        },
-                        {
                             "name": "xDist",
-                            "ioValue": 26
+                            "ioValue": 26,
+                            "currentEquation": null
                         },
                         {
                             "name": "yDist",
-                            "ioValue": 0
+                            "ioValue": 0,
+                            "currentEquation": null
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 0
+                            "ioValue": 0,
+                            "currentEquation": null
                         }
-                    ],
-                    "description": "Moves a shape laterally in X, Y, Z."
+                    ]
                 },
                 {
                     "atomType": "Move",
@@ -467,23 +1357,21 @@
                     "uniqueID": "ca6ac38a-c7cd-47a9-9e9d-91277b50aa32",
                     "ioValues": [
                         {
-                            "name": "geometry",
-                            "ioValue": "2001e580-4999-47c5-b72c-adb1e535a385"
-                        },
-                        {
                             "name": "xDist",
-                            "ioValue": -15
+                            "ioValue": -15,
+                            "currentEquation": null
                         },
                         {
                             "name": "yDist",
-                            "ioValue": 0
+                            "ioValue": 0,
+                            "currentEquation": null
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 0
+                            "ioValue": 0,
+                            "currentEquation": null
                         }
-                    ],
-                    "description": "Moves a shape laterally in X, Y, Z."
+                    ]
                 },
                 {
                     "atomType": "Equation",
@@ -494,119 +1382,106 @@
                     "ioValues": [
                         {
                             "name": "K",
-                            "ioValue": 15
+                            "ioValue": 15,
+                            "currentEquation": null
                         },
                         {
                             "name": "J",
-                            "ioValue": -1
+                            "ioValue": -1,
+                            "currentEquation": null
                         }
                     ],
-                    "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
                     "currentEquation": "K*J"
                 }
             ],
             "allConnectors": [
                 {
-                    "ap1Name": "geometry",
+                    "ap1Name": "output",
                     "ap2Name": "geometry",
-                    "ap2Primary": true,
                     "ap1ID": "d8170d63-5f0b-4c4c-901e-560b8425c7f5",
                     "ap2ID": "34637e91-fdfe-4301-9152-bcfb6f63ee32"
                 },
                 {
                     "ap1Name": "number or geometry",
                     "ap2Name": "Shape 2",
-                    "ap2Primary": false,
                     "ap1ID": "9ed3aa86-5834-4d83-8935-c4a58f1d1cae",
                     "ap2ID": "f37fc0cd-4908-48ef-9028-353b3a9a5814"
                 },
                 {
                     "ap1Name": "number or geometry",
                     "ap2Name": "geometry",
-                    "ap2Primary": true,
                     "ap1ID": "9ed3aa86-5834-4d83-8935-c4a58f1d1cae",
                     "ap2ID": "42223202-21a0-43a9-b344-598708bd9a6e"
                 },
                 {
                     "ap1Name": "number or geometry",
                     "ap2Name": "inputShape",
-                    "ap2Primary": false,
                     "ap1ID": "9ed3aa86-5834-4d83-8935-c4a58f1d1cae",
                     "ap2ID": "d8170d63-5f0b-4c4c-901e-560b8425c7f5"
                 },
                 {
                     "ap1Name": "number or geometry",
                     "ap2Name": "geometry",
-                    "ap2Primary": true,
                     "ap1ID": "9ed3aa86-5834-4d83-8935-c4a58f1d1cae",
                     "ap2ID": "ca6ac38a-c7cd-47a9-9e9d-91277b50aa32"
                 },
                 {
                     "ap1Name": "number",
                     "ap2Name": "J",
-                    "ap2Primary": false,
                     "ap1ID": "329a1c38-1fd0-442b-ae54-3e0751a12734",
                     "ap2ID": "97a92ef6-dce1-43f1-854a-68cd16468a03"
                 },
                 {
                     "ap1Name": "number or geometry",
                     "ap2Name": "xDist",
-                    "ap2Primary": false,
                     "ap1ID": "640c2f18-6623-492e-bfe4-86321314d06e",
                     "ap2ID": "42223202-21a0-43a9-b344-598708bd9a6e"
                 },
                 {
                     "ap1Name": "number or geometry",
                     "ap2Name": "K",
-                    "ap2Primary": false,
                     "ap1ID": "640c2f18-6623-492e-bfe4-86321314d06e",
                     "ap2ID": "97a92ef6-dce1-43f1-854a-68cd16468a03"
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "Shape 1",
-                    "ap2Primary": false,
                     "ap1ID": "f37fc0cd-4908-48ef-9028-353b3a9a5814",
                     "ap2ID": "214ba78e-4c3d-4082-b7e9-f02518df95c4"
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "Shape 2",
-                    "ap2Primary": false,
                     "ap1ID": "42223202-21a0-43a9-b344-598708bd9a6e",
                     "ap2ID": "214ba78e-4c3d-4082-b7e9-f02518df95c4"
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "number or geometry",
-                    "ap2Primary": false,
                     "ap1ID": "214ba78e-4c3d-4082-b7e9-f02518df95c4",
                     "ap2ID": "faf86338-1436-4de4-acce-80039d574fe2"
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "Shape 3",
-                    "ap2Primary": false,
                     "ap1ID": "34637e91-fdfe-4301-9152-bcfb6f63ee32",
                     "ap2ID": "214ba78e-4c3d-4082-b7e9-f02518df95c4"
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "Shape 4",
-                    "ap2Primary": false,
                     "ap1ID": "ca6ac38a-c7cd-47a9-9e9d-91277b50aa32",
                     "ap2ID": "214ba78e-4c3d-4082-b7e9-f02518df95c4"
                 },
                 {
                     "ap1Name": "result",
                     "ap2Name": "xDist",
-                    "ap2Primary": false,
                     "ap1ID": "97a92ef6-dce1-43f1-854a-68cd16468a03",
                     "ap2ID": "ca6ac38a-c7cd-47a9-9e9d-91277b50aa32"
                 }
             ],
             "fileTypeVersion": 1,
-            "compiledBom": {}
+            "compiledBom": []
         },
         {
             "atomType": "Molecule",
@@ -615,7 +1490,6 @@
             "y": 0.38888888888888884,
             "uniqueID": "de21c536-2034-4063-9539-192a69c5981d",
             "ioValues": [],
-            "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
             "topLevel": false,
             "allAtoms": [
                 {
@@ -624,13 +1498,7 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": "ed001256-4aca-4b79-8ba0-d7934d81728a",
-                    "ioValues": [
-                        {
-                            "name": "number or geometry",
-                            "ioValue": "637cecda-5832-45ce-8b8e-fbbc1e5cd86a"
-                        }
-                    ],
-                    "description": "Connect geometry here to make it available in the next level up. "
+                    "ioValues": []
                 },
                 {
                     "atomType": "Circle",
@@ -641,10 +1509,10 @@
                     "ioValues": [
                         {
                             "name": "diameter",
-                            "ioValue": 10
+                            "ioValue": 10,
+                            "currentEquation": null
                         }
-                    ],
-                    "description": "Creates a new circle."
+                    ]
                 },
                 {
                     "atomType": "Extrude",
@@ -654,15 +1522,11 @@
                     "uniqueID": "fcec6825-1330-43df-ba7e-dfbd9fcc36c1",
                     "ioValues": [
                         {
-                            "name": "geometry",
-                            "ioValue": "10f0ca3b-04e4-4460-828e-e4be75046e14"
-                        },
-                        {
                             "name": "height",
-                            "ioValue": 10
+                            "ioValue": 10,
+                            "currentEquation": null
                         }
-                    ],
-                    "description": "Extrudes a 2D shape. Input can be negitive. "
+                    ]
                 },
                 {
                     "atomType": "RegularPolygon",
@@ -673,14 +1537,15 @@
                     "ioValues": [
                         {
                             "name": "number of sides",
-                            "ioValue": 6
+                            "ioValue": 6,
+                            "currentEquation": null
                         },
                         {
                             "name": "diameter",
-                            "ioValue": 10
+                            "ioValue": 10,
+                            "currentEquation": null
                         }
-                    ],
-                    "description": "Creates a new regular polygon. Corners are on the diameter."
+                    ]
                 },
                 {
                     "atomType": "Extrude",
@@ -690,15 +1555,11 @@
                     "uniqueID": "174f35bc-f70f-41f5-8762-5b8597f782da",
                     "ioValues": [
                         {
-                            "name": "geometry",
-                            "ioValue": "0755c97c-38fe-4d69-9eb0-e721f6f9ac90"
-                        },
-                        {
                             "name": "height",
-                            "ioValue": 10
+                            "ioValue": 10,
+                            "currentEquation": null
                         }
-                    ],
-                    "description": "Extrudes a 2D shape. Input can be negitive. "
+                    ]
                 },
                 {
                     "atomType": "Text",
@@ -709,14 +1570,15 @@
                     "ioValues": [
                         {
                             "name": "Font Size",
-                            "ioValue": 10
+                            "ioValue": 10,
+                            "currentEquation": null
                         },
                         {
                             "name": "Text",
-                            "ioValue": "H"
+                            "ioValue": "H",
+                            "currentEquation": null
                         }
                     ],
-                    "description": "Creates a new text sketch.",
                     "fontFamily": "ANTON",
                     "selectedFontIndex": 0
                 },
@@ -728,15 +1590,11 @@
                     "uniqueID": "753b6ba3-e94c-4e57-8dca-04a83e5c7520",
                     "ioValues": [
                         {
-                            "name": "geometry",
-                            "ioValue": "a1e1fbf9-14db-4b8f-8d7f-9b0996ddd722"
-                        },
-                        {
                             "name": "height",
-                            "ioValue": 10
+                            "ioValue": 10,
+                            "currentEquation": null
                         }
-                    ],
-                    "description": "Extrudes a 2D shape. Input can be negitive. "
+                    ]
                 },
                 {
                     "atomType": "Move",
@@ -746,23 +1604,21 @@
                     "uniqueID": "8d4f9b0d-2b38-49ac-8f0c-3eb29b362697",
                     "ioValues": [
                         {
-                            "name": "geometry",
-                            "ioValue": "174f35bc-f70f-41f5-8762-5b8597f782da"
-                        },
-                        {
                             "name": "xDist",
-                            "ioValue": 15
+                            "ioValue": 15,
+                            "currentEquation": null
                         },
                         {
                             "name": "yDist",
-                            "ioValue": 0
+                            "ioValue": 0,
+                            "currentEquation": null
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 0
+                            "ioValue": 0,
+                            "currentEquation": null
                         }
-                    ],
-                    "description": "Moves a shape laterally in X, Y, Z."
+                    ]
                 },
                 {
                     "atomType": "Move",
@@ -772,23 +1628,21 @@
                     "uniqueID": "b0b2d7d5-ce96-45ab-b078-93e873fa2482",
                     "ioValues": [
                         {
-                            "name": "geometry",
-                            "ioValue": "753b6ba3-e94c-4e57-8dca-04a83e5c7520"
-                        },
-                        {
                             "name": "xDist",
-                            "ioValue": -15
+                            "ioValue": -15,
+                            "currentEquation": null
                         },
                         {
                             "name": "yDist",
-                            "ioValue": -4
+                            "ioValue": -4,
+                            "currentEquation": null
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 0
+                            "ioValue": 0,
+                            "currentEquation": null
                         }
-                    ],
-                    "description": "Moves a shape laterally in X, Y, Z."
+                    ]
                 },
                 {
                     "atomType": "Assembly",
@@ -799,87 +1653,146 @@
                     "ioValues": [
                         {
                             "name": "Shape 1",
-                            "ioValue": "b0b2d7d5-ce96-45ab-b078-93e873fa2482"
+                            "ioValue": {
+                                "geometry": "move-extrude-text-H-{\"startX\":0,\"startY\":0,\"fontSize\":10,\"font\":\"ANTON\"}-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10--15--4-0",
+                                "dimension": "3D",
+                                "tags": [],
+                                "plane": {
+                                    "origin": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "xDir": [
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "normal": [
+                                        0,
+                                        0,
+                                        1
+                                    ]
+                                },
+                                "color": "#aad7f2",
+                                "bom": []
+                            }
                         },
                         {
                             "name": "Shape 2",
-                            "ioValue": "8d4f9b0d-2b38-49ac-8f0c-3eb29b362697"
+                            "ioValue": {
+                                "geometry": "move-extrude-polysides-5-6-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10-15-0-0",
+                                "dimension": "3D",
+                                "tags": [],
+                                "plane": {
+                                    "origin": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "xDir": [
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "normal": [
+                                        0,
+                                        0,
+                                        1
+                                    ]
+                                },
+                                "color": "#aad7f2",
+                                "bom": []
+                            }
                         },
                         {
                             "name": "Shape 3",
-                            "ioValue": "fcec6825-1330-43df-ba7e-dfbd9fcc36c1"
+                            "ioValue": {
+                                "geometry": "extrude-circle-5-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10",
+                                "dimension": "3D",
+                                "tags": [],
+                                "plane": {
+                                    "origin": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "xDir": [
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "normal": [
+                                        0,
+                                        0,
+                                        1
+                                    ]
+                                },
+                                "color": "#aad7f2",
+                                "bom": []
+                            }
                         }
-                    ],
-                    "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
+                    ]
                 }
             ],
             "allConnectors": [
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "geometry",
-                    "ap2Primary": true,
                     "ap1ID": "10f0ca3b-04e4-4460-828e-e4be75046e14",
                     "ap2ID": "fcec6825-1330-43df-ba7e-dfbd9fcc36c1"
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "Shape 3",
-                    "ap2Primary": false,
                     "ap1ID": "fcec6825-1330-43df-ba7e-dfbd9fcc36c1",
                     "ap2ID": "637cecda-5832-45ce-8b8e-fbbc1e5cd86a"
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "geometry",
-                    "ap2Primary": true,
                     "ap1ID": "0755c97c-38fe-4d69-9eb0-e721f6f9ac90",
                     "ap2ID": "174f35bc-f70f-41f5-8762-5b8597f782da"
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "geometry",
-                    "ap2Primary": true,
                     "ap1ID": "174f35bc-f70f-41f5-8762-5b8597f782da",
                     "ap2ID": "8d4f9b0d-2b38-49ac-8f0c-3eb29b362697"
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "geometry",
-                    "ap2Primary": true,
                     "ap1ID": "a1e1fbf9-14db-4b8f-8d7f-9b0996ddd722",
                     "ap2ID": "753b6ba3-e94c-4e57-8dca-04a83e5c7520"
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "geometry",
-                    "ap2Primary": true,
                     "ap1ID": "753b6ba3-e94c-4e57-8dca-04a83e5c7520",
                     "ap2ID": "b0b2d7d5-ce96-45ab-b078-93e873fa2482"
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "Shape 2",
-                    "ap2Primary": false,
                     "ap1ID": "8d4f9b0d-2b38-49ac-8f0c-3eb29b362697",
                     "ap2ID": "637cecda-5832-45ce-8b8e-fbbc1e5cd86a"
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "Shape 1",
-                    "ap2Primary": false,
                     "ap1ID": "b0b2d7d5-ce96-45ab-b078-93e873fa2482",
                     "ap2ID": "637cecda-5832-45ce-8b8e-fbbc1e5cd86a"
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "number or geometry",
-                    "ap2Primary": false,
                     "ap1ID": "637cecda-5832-45ce-8b8e-fbbc1e5cd86a",
                     "ap2ID": "ed001256-4aca-4b79-8ba0-d7934d81728a"
                 }
             ],
             "fileTypeVersion": 1,
-            "compiledBom": {}
+            "compiledBom": []
         },
         {
             "atomType": "Molecule",
@@ -888,7 +1801,6 @@
             "y": 0.5083333333333333,
             "uniqueID": "c28c12bc-3be6-48af-99c5-73b1761296dc",
             "ioValues": [],
-            "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
             "topLevel": false,
             "allAtoms": [
                 {
@@ -897,13 +1809,7 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": "de002d71-a5c3-4528-ada7-2930d0030245",
-                    "ioValues": [
-                        {
-                            "name": "number or geometry",
-                            "ioValue": "b2929101-7945-47ba-909e-b00c59aa0058"
-                        }
-                    ],
-                    "description": "Connect geometry here to make it available in the next level up. "
+                    "ioValues": []
                 },
                 {
                     "atomType": "Circle",
@@ -914,10 +1820,10 @@
                     "ioValues": [
                         {
                             "name": "diameter",
-                            "ioValue": 5
+                            "ioValue": 5,
+                            "currentEquation": null
                         }
-                    ],
-                    "description": "Creates a new circle."
+                    ]
                 },
                 {
                     "atomType": "Rectangle",
@@ -928,14 +1834,15 @@
                     "ioValues": [
                         {
                             "name": "x length",
-                            "ioValue": 10
+                            "ioValue": 10,
+                            "currentEquation": null
                         },
                         {
                             "name": "y length",
-                            "ioValue": 10
+                            "ioValue": 10,
+                            "currentEquation": null
                         }
-                    ],
-                    "description": "Creates a new rectangle."
+                    ]
                 },
                 {
                     "atomType": "Difference",
@@ -943,17 +1850,7 @@
                     "x": 0.37632275132275134,
                     "y": 0.19722222222222222,
                     "uniqueID": "ca2f2d7a-c2b4-450b-992a-aa7df17ab06c",
-                    "ioValues": [
-                        {
-                            "name": "geometry1",
-                            "ioValue": "9a2cd07c-153b-4c7c-8c1d-80ed2d76cf72"
-                        },
-                        {
-                            "name": "geometry2",
-                            "ioValue": "3cd8d3c4-d333-48b9-a982-7c7ce9d2332f"
-                        }
-                    ],
-                    "description": "Subtracts shape two from shape one."
+                    "ioValues": []
                 },
                 {
                     "atomType": "Extrude",
@@ -963,15 +1860,11 @@
                     "uniqueID": "62018e1b-934d-477f-b7d2-78262beebb13",
                     "ioValues": [
                         {
-                            "name": "geometry",
-                            "ioValue": "ca2f2d7a-c2b4-450b-992a-aa7df17ab06c"
-                        },
-                        {
                             "name": "height",
-                            "ioValue": 10
+                            "ioValue": 10,
+                            "currentEquation": null
                         }
-                    ],
-                    "description": "Extrudes a 2D shape. Input can be negitive. "
+                    ]
                 },
                 {
                     "atomType": "Assembly",
@@ -982,22 +1875,115 @@
                     "ioValues": [
                         {
                             "name": "Shape 1",
-                            "ioValue": "62018e1b-934d-477f-b7d2-78262beebb13"
+                            "ioValue": {
+                                "geometry": "extrude-cut-rectangle-10-10-circle-2.5-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10",
+                                "dimension": "3D",
+                                "plane": {
+                                    "origin": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "xDir": [
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "normal": [
+                                        0,
+                                        0,
+                                        1
+                                    ]
+                                },
+                                "color": "#aad7f2",
+                                "tags": [],
+                                "bom": []
+                            }
                         },
                         {
                             "name": "Shape 2",
-                            "ioValue": "501c021d-3327-44e4-833c-d06d81f668c8"
+                            "ioValue": {
+                                "geometry": "move-extrude-intersect-circle-2.5-rectangle-10-10-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10-15-0-0",
+                                "tags": [],
+                                "color": "#aad7f2",
+                                "plane": {
+                                    "origin": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "xDir": [
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "normal": [
+                                        0,
+                                        0,
+                                        1
+                                    ]
+                                },
+                                "bom": [],
+                                "dimension": "3D"
+                            }
                         },
                         {
                             "name": "Shape 3",
-                            "ioValue": "54f53d95-273a-4804-8880-1928c83f9ddd"
+                            "ioValue": {
+                                "geometry": "move-singular-0--15-0-0",
+                                "dimension": "3D",
+                                "tags": [],
+                                "plane": {
+                                    "origin": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "xDir": [
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "normal": [
+                                        0,
+                                        0,
+                                        1
+                                    ]
+                                },
+                                "color": "#aad7f2",
+                                "bom": []
+                            }
                         },
                         {
                             "name": "Shape 5",
-                            "ioValue": "b495b680-7673-46ba-9003-63c0e2d08297"
+                            "ioValue": {
+                                "geometry": "extrude-move-shrinkWrap-fuse-move-circle-2.5-8-0-0-rectangle-10-10-50-27-0-0-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10",
+                                "dimension": "3D",
+                                "tags": [],
+                                "color": "#aad7f2",
+                                "plane": {
+                                    "origin": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "xDir": [
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "normal": [
+                                        0,
+                                        0,
+                                        1
+                                    ]
+                                },
+                                "bom": [
+                                    []
+                                ]
+                            }
                         }
-                    ],
-                    "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
+                    ]
                 },
                 {
                     "atomType": "Intersection",
@@ -1005,17 +1991,7 @@
                     "x": 0.3802910052910053,
                     "y": 0.3833333333333333,
                     "uniqueID": "0c062fa4-8bfa-4d3b-9f77-5bab5e2ad4b2",
-                    "ioValues": [
-                        {
-                            "name": "geometry1",
-                            "ioValue": "3cd8d3c4-d333-48b9-a982-7c7ce9d2332f"
-                        },
-                        {
-                            "name": "geometry2",
-                            "ioValue": "9a2cd07c-153b-4c7c-8c1d-80ed2d76cf72"
-                        }
-                    ],
-                    "description": "The space shared by two shapes."
+                    "ioValues": []
                 },
                 {
                     "atomType": "Extrude",
@@ -1025,15 +2001,11 @@
                     "uniqueID": "6ed95654-4c54-47d8-8e25-77d94bffbb4a",
                     "ioValues": [
                         {
-                            "name": "geometry",
-                            "ioValue": "0c062fa4-8bfa-4d3b-9f77-5bab5e2ad4b2"
-                        },
-                        {
                             "name": "height",
-                            "ioValue": 10
+                            "ioValue": 10,
+                            "currentEquation": null
                         }
-                    ],
-                    "description": "Extrudes a 2D shape. Input can be negitive. "
+                    ]
                 },
                 {
                     "atomType": "Move",
@@ -1043,23 +2015,21 @@
                     "uniqueID": "501c021d-3327-44e4-833c-d06d81f668c8",
                     "ioValues": [
                         {
-                            "name": "geometry",
-                            "ioValue": "6ed95654-4c54-47d8-8e25-77d94bffbb4a"
-                        },
-                        {
                             "name": "xDist",
-                            "ioValue": 15
+                            "ioValue": 15,
+                            "currentEquation": null
                         },
                         {
                             "name": "yDist",
-                            "ioValue": 0
+                            "ioValue": 0,
+                            "currentEquation": null
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 0
+                            "ioValue": 0,
+                            "currentEquation": null
                         }
-                    ],
-                    "description": "Moves a shape laterally in X, Y, Z."
+                    ]
                 },
                 {
                     "atomType": "Loft",
@@ -1069,31 +2039,69 @@
                     "uniqueID": "ade656b7-db73-415f-919b-e071f437d8fb",
                     "ioValues": [
                         {
-                            "name": "Shape 1",
-                            "ioValue": "5225f99c-70f5-4cb3-a768-0e8282d2b4f4"
-                        },
-                        {
-                            "name": "Shape 2",
-                            "ioValue": "9a2cd07c-153b-4c7c-8c1d-80ed2d76cf72"
-                        },
-                        {
                             "name": "Shape 3",
-                            "ioValue": ""
+                            "ioValue": "",
+                            "currentEquation": null
                         },
                         {
                             "name": "Shape 1",
-                            "ioValue": "5225f99c-70f5-4cb3-a768-0e8282d2b4f4"
+                            "ioValue": {
+                                "geometry": "move-circle-2.5-0-0-0",
+                                "dimension": "2D",
+                                "tags": [],
+                                "plane": {
+                                    "origin": [
+                                        0,
+                                        0,
+                                        10
+                                    ],
+                                    "xDir": [
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "normal": [
+                                        0,
+                                        0,
+                                        1
+                                    ]
+                                },
+                                "color": "#aad7f2",
+                                "bom": []
+                            }
                         },
                         {
                             "name": "Shape 2",
-                            "ioValue": "9a2cd07c-153b-4c7c-8c1d-80ed2d76cf72"
+                            "ioValue": {
+                                "geometry": "rectangle-10-10",
+                                "dimension": "2D",
+                                "plane": {
+                                    "origin": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "xDir": [
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "normal": [
+                                        0,
+                                        0,
+                                        1
+                                    ]
+                                },
+                                "color": "#aad7f2",
+                                "tags": [],
+                                "bom": []
+                            }
                         },
                         {
                             "name": "Shape 3",
                             "ioValue": ""
                         }
                     ],
-                    "description": "Joins two or more shapes into a single solid by filling in the space between them.",
                     "closedSelection": 0
                 },
                 {
@@ -1104,31 +2112,69 @@
                     "uniqueID": "21bde851-698c-472f-b7d5-20aa9adb1f6c",
                     "ioValues": [
                         {
-                            "name": "Shape 1",
-                            "ioValue": "ec3c2a2b-8e2f-46a3-a001-dba0d0b9bd05"
-                        },
-                        {
-                            "name": "Shape 2",
-                            "ioValue": "9a2cd07c-153b-4c7c-8c1d-80ed2d76cf72"
-                        },
-                        {
                             "name": "Shape 3",
-                            "ioValue": ""
+                            "ioValue": "",
+                            "currentEquation": null
                         },
                         {
                             "name": "Shape 1",
-                            "ioValue": "ec3c2a2b-8e2f-46a3-a001-dba0d0b9bd05"
+                            "ioValue": {
+                                "geometry": "move-circle-2.5-8-0-0",
+                                "dimension": "2D",
+                                "tags": [],
+                                "plane": {
+                                    "origin": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "xDir": [
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "normal": [
+                                        0,
+                                        0,
+                                        1
+                                    ]
+                                },
+                                "color": "#aad7f2",
+                                "bom": []
+                            }
                         },
                         {
                             "name": "Shape 2",
-                            "ioValue": "9a2cd07c-153b-4c7c-8c1d-80ed2d76cf72"
+                            "ioValue": {
+                                "geometry": "rectangle-10-10",
+                                "dimension": "2D",
+                                "plane": {
+                                    "origin": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "xDir": [
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "normal": [
+                                        0,
+                                        0,
+                                        1
+                                    ]
+                                },
+                                "color": "#aad7f2",
+                                "tags": [],
+                                "bom": []
+                            }
                         },
                         {
                             "name": "Shape 3",
                             "ioValue": ""
                         }
-                    ],
-                    "description": "Joins two or more drawings into a single sketch by filling in the space between them. Also called 'hull'"
+                    ]
                 },
                 {
                     "atomType": "Move",
@@ -1138,23 +2184,21 @@
                     "uniqueID": "5225f99c-70f5-4cb3-a768-0e8282d2b4f4",
                     "ioValues": [
                         {
-                            "name": "geometry",
-                            "ioValue": "3cd8d3c4-d333-48b9-a982-7c7ce9d2332f"
-                        },
-                        {
                             "name": "xDist",
-                            "ioValue": 0
+                            "ioValue": 0,
+                            "currentEquation": null
                         },
                         {
                             "name": "yDist",
-                            "ioValue": 0
+                            "ioValue": 0,
+                            "currentEquation": null
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 10
+                            "ioValue": 10,
+                            "currentEquation": null
                         }
-                    ],
-                    "description": "Moves a shape laterally in X, Y, Z."
+                    ]
                 },
                 {
                     "atomType": "Move",
@@ -1164,23 +2208,21 @@
                     "uniqueID": "54f53d95-273a-4804-8880-1928c83f9ddd",
                     "ioValues": [
                         {
-                            "name": "geometry",
-                            "ioValue": "ade656b7-db73-415f-919b-e071f437d8fb"
-                        },
-                        {
                             "name": "xDist",
-                            "ioValue": -15
+                            "ioValue": -15,
+                            "currentEquation": null
                         },
                         {
                             "name": "yDist",
-                            "ioValue": 0
+                            "ioValue": 0,
+                            "currentEquation": null
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 0
+                            "ioValue": 0,
+                            "currentEquation": null
                         }
-                    ],
-                    "description": "Moves a shape laterally in X, Y, Z."
+                    ]
                 },
                 {
                     "atomType": "Move",
@@ -1190,23 +2232,21 @@
                     "uniqueID": "ec3c2a2b-8e2f-46a3-a001-dba0d0b9bd05",
                     "ioValues": [
                         {
-                            "name": "geometry",
-                            "ioValue": "3cd8d3c4-d333-48b9-a982-7c7ce9d2332f"
-                        },
-                        {
                             "name": "xDist",
-                            "ioValue": 8
+                            "ioValue": 8,
+                            "currentEquation": null
                         },
                         {
                             "name": "yDist",
-                            "ioValue": 0
+                            "ioValue": 0,
+                            "currentEquation": null
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 0
+                            "ioValue": 0,
+                            "currentEquation": null
                         }
-                    ],
-                    "description": "Moves a shape laterally in X, Y, Z."
+                    ]
                 },
                 {
                     "atomType": "Move",
@@ -1216,23 +2256,21 @@
                     "uniqueID": "847f181a-02a1-4922-9658-49814e1d4976",
                     "ioValues": [
                         {
-                            "name": "geometry",
-                            "ioValue": "21bde851-698c-472f-b7d5-20aa9adb1f6c"
-                        },
-                        {
                             "name": "xDist",
-                            "ioValue": 27
+                            "ioValue": 27,
+                            "currentEquation": null
                         },
                         {
                             "name": "yDist",
-                            "ioValue": 0
+                            "ioValue": 0,
+                            "currentEquation": null
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 0
+                            "ioValue": 0,
+                            "currentEquation": null
                         }
-                    ],
-                    "description": "Moves a shape laterally in X, Y, Z."
+                    ]
                 },
                 {
                     "atomType": "Extrude",
@@ -1242,256 +2280,143 @@
                     "uniqueID": "b495b680-7673-46ba-9003-63c0e2d08297",
                     "ioValues": [
                         {
-                            "name": "geometry",
-                            "ioValue": "847f181a-02a1-4922-9658-49814e1d4976"
-                        },
-                        {
                             "name": "height",
-                            "ioValue": 10
+                            "ioValue": 10,
+                            "currentEquation": null
                         }
-                    ],
-                    "description": "Extrudes a 2D shape. Input can be negitive. "
+                    ]
                 }
             ],
             "allConnectors": [
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "geometry2",
-                    "ap2Primary": false,
                     "ap1ID": "3cd8d3c4-d333-48b9-a982-7c7ce9d2332f",
                     "ap2ID": "ca2f2d7a-c2b4-450b-992a-aa7df17ab06c"
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "geometry1",
-                    "ap2Primary": false,
                     "ap1ID": "3cd8d3c4-d333-48b9-a982-7c7ce9d2332f",
                     "ap2ID": "0c062fa4-8bfa-4d3b-9f77-5bab5e2ad4b2"
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "geometry",
-                    "ap2Primary": true,
                     "ap1ID": "3cd8d3c4-d333-48b9-a982-7c7ce9d2332f",
                     "ap2ID": "5225f99c-70f5-4cb3-a768-0e8282d2b4f4"
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "geometry",
-                    "ap2Primary": true,
                     "ap1ID": "3cd8d3c4-d333-48b9-a982-7c7ce9d2332f",
                     "ap2ID": "ec3c2a2b-8e2f-46a3-a001-dba0d0b9bd05"
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "geometry1",
-                    "ap2Primary": false,
                     "ap1ID": "9a2cd07c-153b-4c7c-8c1d-80ed2d76cf72",
                     "ap2ID": "ca2f2d7a-c2b4-450b-992a-aa7df17ab06c"
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "geometry2",
-                    "ap2Primary": false,
                     "ap1ID": "9a2cd07c-153b-4c7c-8c1d-80ed2d76cf72",
                     "ap2ID": "0c062fa4-8bfa-4d3b-9f77-5bab5e2ad4b2"
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "Shape 2",
-                    "ap2Primary": false,
                     "ap1ID": "9a2cd07c-153b-4c7c-8c1d-80ed2d76cf72",
                     "ap2ID": "ade656b7-db73-415f-919b-e071f437d8fb"
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "Shape 2",
-                    "ap2Primary": false,
                     "ap1ID": "9a2cd07c-153b-4c7c-8c1d-80ed2d76cf72",
                     "ap2ID": "21bde851-698c-472f-b7d5-20aa9adb1f6c"
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "geometry",
-                    "ap2Primary": true,
                     "ap1ID": "ca2f2d7a-c2b4-450b-992a-aa7df17ab06c",
                     "ap2ID": "62018e1b-934d-477f-b7d2-78262beebb13"
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "Shape 1",
-                    "ap2Primary": false,
                     "ap1ID": "62018e1b-934d-477f-b7d2-78262beebb13",
                     "ap2ID": "b2929101-7945-47ba-909e-b00c59aa0058"
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "number or geometry",
-                    "ap2Primary": false,
                     "ap1ID": "b2929101-7945-47ba-909e-b00c59aa0058",
                     "ap2ID": "de002d71-a5c3-4528-ada7-2930d0030245"
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "geometry",
-                    "ap2Primary": true,
                     "ap1ID": "0c062fa4-8bfa-4d3b-9f77-5bab5e2ad4b2",
                     "ap2ID": "6ed95654-4c54-47d8-8e25-77d94bffbb4a"
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "geometry",
-                    "ap2Primary": true,
                     "ap1ID": "6ed95654-4c54-47d8-8e25-77d94bffbb4a",
                     "ap2ID": "501c021d-3327-44e4-833c-d06d81f668c8"
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "Shape 2",
-                    "ap2Primary": false,
                     "ap1ID": "501c021d-3327-44e4-833c-d06d81f668c8",
                     "ap2ID": "b2929101-7945-47ba-909e-b00c59aa0058"
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "geometry",
-                    "ap2Primary": true,
                     "ap1ID": "ade656b7-db73-415f-919b-e071f437d8fb",
                     "ap2ID": "54f53d95-273a-4804-8880-1928c83f9ddd"
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "geometry",
-                    "ap2Primary": true,
                     "ap1ID": "21bde851-698c-472f-b7d5-20aa9adb1f6c",
                     "ap2ID": "847f181a-02a1-4922-9658-49814e1d4976"
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "Shape 1",
-                    "ap2Primary": false,
                     "ap1ID": "5225f99c-70f5-4cb3-a768-0e8282d2b4f4",
                     "ap2ID": "ade656b7-db73-415f-919b-e071f437d8fb"
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "Shape 3",
-                    "ap2Primary": false,
                     "ap1ID": "54f53d95-273a-4804-8880-1928c83f9ddd",
                     "ap2ID": "b2929101-7945-47ba-909e-b00c59aa0058"
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "Shape 1",
-                    "ap2Primary": false,
                     "ap1ID": "ec3c2a2b-8e2f-46a3-a001-dba0d0b9bd05",
                     "ap2ID": "21bde851-698c-472f-b7d5-20aa9adb1f6c"
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "geometry",
-                    "ap2Primary": true,
                     "ap1ID": "847f181a-02a1-4922-9658-49814e1d4976",
                     "ap2ID": "b495b680-7673-46ba-9003-63c0e2d08297"
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "Shape 5",
-                    "ap2Primary": false,
                     "ap1ID": "b495b680-7673-46ba-9003-63c0e2d08297",
                     "ap2ID": "b2929101-7945-47ba-909e-b00c59aa0058"
                 }
             ],
             "fileTypeVersion": 1,
-            "compiledBom": {}
-        },
-        {
-            "atomType": "Move",
-            "name": "Move",
-            "x": 0.3511904761904762,
-            "y": 0.34444444444444444,
-            "uniqueID": "4f7f7078-d932-4bd4-a14b-d9a726abafdf",
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": "de21c536-2034-4063-9539-192a69c5981d"
-                },
-                {
-                    "name": "xDist",
-                    "ioValue": 0
-                },
-                {
-                    "name": "yDist",
-                    "ioValue": -15
-                },
-                {
-                    "name": "zDist",
-                    "ioValue": 0
-                }
-            ],
-            "description": "Moves a shape laterally in X, Y, Z."
-        },
-        {
-            "atomType": "Move",
-            "name": "Move",
-            "x": 0.4887566137566138,
-            "y": 0.5138888888888888,
-            "uniqueID": "b0e28b43-a4ea-4b94-bcb6-e6e901f76dd0",
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": "c28c12bc-3be6-48af-99c5-73b1761296dc"
-                },
-                {
-                    "name": "xDist",
-                    "ioValue": 0
-                },
-                {
-                    "name": "yDist",
-                    "ioValue": 15
-                },
-                {
-                    "name": "zDist",
-                    "ioValue": 0
-                }
-            ],
-            "description": "Moves a shape laterally in X, Y, Z."
-        },
-        {
-            "atomType": "Rectangle",
-            "name": "Rectangle",
-            "x": 0.07473544973544974,
-            "y": 0.8333333333333334,
-            "uniqueID": "30e7e952-806b-4632-a0fb-1b3c1b0871d0",
-            "ioValues": [
-                {
-                    "name": "x length",
-                    "ioValue": 10
-                },
-                {
-                    "name": "y length",
-                    "ioValue": 10
-                }
-            ],
-            "description": "Creates a new rectangle."
-        },
-        {
-            "atomType": "Extrude",
-            "name": "Extrude",
-            "x": 0.22354497354497355,
-            "y": 0.7222222222222222,
-            "uniqueID": "20e1e580-4999-47c5-b72c-adb1e535a385",
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": "30e7e952-806b-4632-a0fb-1b3c1b0871d0"
-                },
-                {
-                    "name": "height",
-                    "ioValue": 10
-                }
-            ],
-            "description": "Extrudes a 2D shape. Input can be negitive. "
+            "compiledBom": []
         },
         {
             "atomType": "Molecule",
@@ -1500,7 +2425,6 @@
             "y": 0.8789625360230547,
             "uniqueID": "ceeeff44-be3b-46e2-a304-44f72cc4399a",
             "ioValues": [],
-            "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
             "topLevel": false,
             "allAtoms": [
                 {
@@ -1509,8 +2433,7 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": "c8329ef9-f657-4b81-a55a-bf298f0706ae",
-                    "ioValues": [],
-                    "description": "Connect geometry here to make it available in the next level up. "
+                    "ioValues": []
                 },
                 {
                     "atomType": "Rectangle",
@@ -1521,32 +2444,29 @@
                     "ioValues": [
                         {
                             "name": "x length",
-                            "ioValue": 10
+                            "ioValue": 10,
+                            "currentEquation": null
                         },
                         {
                             "name": "y length",
-                            "ioValue": 10
+                            "ioValue": 10,
+                            "currentEquation": null
                         }
-                    ],
-                    "description": "Creates a new rectangle."
+                    ]
                 },
                 {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 0.36096256684491984,
-                    "y": 0.3631123919308357,
+                    "x": 0.32646048109965636,
+                    "y": 0.40372670807453415,
                     "uniqueID": "cf9f00c2-54e8-4776-bca7-4c0ebb3a0531",
                     "ioValues": [
                         {
-                            "name": "geometry",
-                            "ioValue": "17ac94ea-9915-4241-ae3a-06a4ab091228"
-                        },
-                        {
                             "name": "height",
-                            "ioValue": 10
+                            "ioValue": 10,
+                            "currentEquation": null
                         }
-                    ],
-                    "description": "Extrudes a 2D shape. Input can be negitive. "
+                    ]
                 },
                 {
                     "atomType": "Export",
@@ -1556,23 +2476,21 @@
                     "uniqueID": "8b0dd430-03e8-484c-bdf8-26859a13d47b",
                     "ioValues": [
                         {
-                            "name": "geometry",
-                            "ioValue": "cf9f00c2-54e8-4776-bca7-4c0ebb3a0531"
+                            "name": "File Type",
+                            "ioValue": "STL",
+                            "currentEquation": null
                         },
                         {
                             "name": "Resolution (dpi)",
-                            "ioValue": 96
+                            "ioValue": 96,
+                            "currentEquation": null
                         },
                         {
                             "name": "Part Name",
-                            "ioValue": "Import Export"
-                        },
-                        {
-                            "name": "File Type",
-                            "ioValue": "STL"
+                            "ioValue": "Import Export",
+                            "currentEquation": null
                         }
                     ],
-                    "description": "Export Atom, let's you choose a type of file to Export.",
                     "type": "STL",
                     "resolution": 96,
                     "importIndex": 0,
@@ -1581,14 +2499,12 @@
                 {
                     "atomType": "Import",
                     "name": "Import",
-                    "x": 0.24074074074074073,
-                    "y": 0.6944444444444444,
+                    "x": 0.24123711340206183,
+                    "y": 0.6894409937888198,
                     "uniqueID": "d06d8285-887a-44e7-ad04-c183203a2bf1",
                     "ioValues": [],
-                    "description": "Import Atom, let's you choose a type of file to import and use in your design.",
                     "fileName": "Square.svg",
                     "type": "SVG",
-                    "SVGwidth": 10,
                     "repoOwner": "BarbourSmith",
                     "repoName": "Test-Everything-Fully"
                 },
@@ -1600,15 +2516,162 @@
                     "uniqueID": "828581cb-e32f-4b86-9877-b8c18ac0d55a",
                     "ioValues": [
                         {
-                            "name": "geometry",
-                            "ioValue": "d06d8285-887a-44e7-ad04-c183203a2bf1"
+                            "name": "height",
+                            "ioValue": 10,
+                            "currentEquation": null
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.585978835978836,
+                    "y": 0.7611111111111112,
+                    "uniqueID": "4dea3125-9dec-4b90-977d-210c4fc1ee82",
+                    "ioValues": [
+                        {
+                            "name": "xDist",
+                            "ioValue": 15,
+                            "currentEquation": null
                         },
                         {
-                            "name": "height",
-                            "ioValue": 10
+                            "name": "yDist",
+                            "ioValue": 0,
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 0,
+                            "currentEquation": null
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Assembly",
+                    "name": "Assembly",
+                    "x": 0.7927807486631016,
+                    "y": 0.5446685878962536,
+                    "uniqueID": "26ecee4d-e8a9-40a8-8049-cfeb246337e7",
+                    "ioValues": [
+                        {
+                            "name": "Shape 1",
+                            "ioValue": {
+                                "geometry": "move-fuse-extrude-circle-4-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}--20-extrude-polysides-7.5-6-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-4-15-0-0",
+                                "tags": [],
+                                "bom": [],
+                                "plane": {
+                                    "origin": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "xDir": [
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "normal": [
+                                        0,
+                                        0,
+                                        1
+                                    ]
+                                },
+                                "color": "#3C3C3C",
+                                "dimension": "3D"
+                            }
+                        },
+                        {
+                            "name": "Shape 3",
+                            "ioValue": null
+                        },
+                        {
+                            "name": "Shape 4",
+                            "ioValue": {
+                                "geometry": "extrude-singular-3-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10",
+                                "tags": [],
+                                "plane": {
+                                    "origin": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "xDir": [
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "normal": [
+                                        0,
+                                        0,
+                                        1
+                                    ]
+                                },
+                                "color": "#aad7f2",
+                                "bom": [],
+                                "dimension": "3D"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Gcode",
+                    "name": "Gcode",
+                    "x": 0.5419240953221536,
+                    "y": 0.42546583850931674,
+                    "uniqueID": "2a0953f8-b41e-4d59-9f23-14034b46903a",
+                    "ioValues": [
+                        {
+                            "name": "Tool Size",
+                            "ioValue": 6.35,
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "Passes",
+                            "ioValue": 6,
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "Speed",
+                            "ioValue": 500,
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "Cut Through",
+                            "ioValue": 1,
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "Part Name",
+                            "ioValue": "Import Export",
+                            "currentEquation": null
                         }
                     ],
-                    "description": "Extrudes a 2D shape. Input can be negitive. "
+                    "partName": "Import Export",
+                    "sortDirection": "Left"
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.6544117647058824,
+                    "y": 0.29971181556195964,
+                    "uniqueID": "fec58716-684b-4794-84f9-9bd778765d7d",
+                    "ioValues": [
+                        {
+                            "name": "xDist",
+                            "ioValue": -15,
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": 0,
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 0,
+                            "currentEquation": null
+                        }
+                    ]
                 },
                 {
                     "atomType": "GitHubMolecule",
@@ -1617,7 +2680,6 @@
                     "y": 0.825,
                     "uniqueID": "97bb81cf-b2a6-49be-b4b8-bf1139d652cd",
                     "ioValues": [],
-                    "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
                     "topLevel": false,
                     "allAtoms": [
                         {
@@ -1626,13 +2688,7 @@
                             "x": 0.98,
                             "y": 0.5,
                             "uniqueID": "75a398f8-90bd-4e6d-9e0f-6f5b297d2579",
-                            "ioValues": [
-                                {
-                                    "name": "number or geometry",
-                                    "ioValue": "68ac6206-a091-4f36-8dab-f9a7b26aab6c"
-                                }
-                            ],
-                            "description": "Connect geometry here to make it available in the next level up. "
+                            "ioValues": []
                         },
                         {
                             "atomType": "Circle",
@@ -1643,10 +2699,10 @@
                             "ioValues": [
                                 {
                                     "name": "diameter",
-                                    "ioValue": 8
+                                    "ioValue": 8,
+                                    "currentEquation": null
                                 }
-                            ],
-                            "description": "Creates a new circle."
+                            ]
                         },
                         {
                             "atomType": "Extrude",
@@ -1656,15 +2712,11 @@
                             "uniqueID": "aa5574c7-73db-4db5-ba32-6bb024770e4a",
                             "ioValues": [
                                 {
-                                    "name": "geometry",
-                                    "ioValue": "8b9a64c1-fd62-43fb-83ef-7a3ac56ce714"
-                                },
-                                {
                                     "name": "height",
-                                    "ioValue": -20
+                                    "ioValue": -20,
+                                    "currentEquation": null
                                 }
-                            ],
-                            "description": "Extrudes a 2D shape. Input can be negitive. "
+                            ]
                         },
                         {
                             "atomType": "Readme",
@@ -1673,8 +2725,7 @@
                             "y": 0.3064066852367688,
                             "uniqueID": "8f78a507-c995-449f-9161-1488852a9555",
                             "ioValues": [],
-                            "description": "A place to put project notes. These will appear in the GitHub readme and in the description of molecules up the chain. Markdown is supported. ",
-                            "readmeText": "Readme text here",
+                            "readMeText": "Readme text here",
                             "global": true
                         },
                         {
@@ -1686,14 +2737,15 @@
                             "ioValues": [
                                 {
                                     "name": "number of sides",
-                                    "ioValue": 6
+                                    "ioValue": 6,
+                                    "currentEquation": null
                                 },
                                 {
                                     "name": "diameter",
-                                    "ioValue": 15
+                                    "ioValue": 15,
+                                    "currentEquation": null
                                 }
-                            ],
-                            "description": "Creates a new regular polygon. Corners are on the diameter."
+                            ]
                         },
                         {
                             "atomType": "Extrude",
@@ -1703,15 +2755,11 @@
                             "uniqueID": "42126d33-ee19-4903-bd04-d9e1eb39487f",
                             "ioValues": [
                                 {
-                                    "name": "geometry",
-                                    "ioValue": "64676eac-cf0c-4473-aafa-a67a152e464c"
-                                },
-                                {
                                     "name": "height",
-                                    "ioValue": 4
+                                    "ioValue": 4,
+                                    "currentEquation": null
                                 }
-                            ],
-                            "description": "Extrudes a 2D shape. Input can be negitive. "
+                            ]
                         },
                         {
                             "atomType": "Fusion",
@@ -1722,14 +2770,59 @@
                             "ioValues": [
                                 {
                                     "name": "Shape 1",
-                                    "ioValue": "aa5574c7-73db-4db5-ba32-6bb024770e4a"
+                                    "ioValue": {
+                                        "geometry": "extrude-circle-4-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}--20",
+                                        "dimension": "3D",
+                                        "tags": [],
+                                        "plane": {
+                                            "origin": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "xDir": [
+                                                1,
+                                                0,
+                                                0
+                                            ],
+                                            "normal": [
+                                                0,
+                                                0,
+                                                1
+                                            ]
+                                        },
+                                        "color": "#aad7f2",
+                                        "bom": []
+                                    }
                                 },
                                 {
                                     "name": "Shape 2",
-                                    "ioValue": "42126d33-ee19-4903-bd04-d9e1eb39487f"
+                                    "ioValue": {
+                                        "geometry": "extrude-polysides-7.5-6-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-4",
+                                        "dimension": "3D",
+                                        "tags": [],
+                                        "plane": {
+                                            "origin": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "xDir": [
+                                                1,
+                                                0,
+                                                0
+                                            ],
+                                            "normal": [
+                                                0,
+                                                0,
+                                                1
+                                            ]
+                                        },
+                                        "color": "#aad7f2",
+                                        "bom": []
+                                    }
                                 }
                             ],
-                            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
                             "unionType": "Fusion"
                         },
                         {
@@ -1738,13 +2831,7 @@
                             "x": 0.6845238095238095,
                             "y": 0.4512534818941504,
                             "uniqueID": "68ac6206-a091-4f36-8dab-f9a7b26aab6c",
-                            "ioValues": [
-                                {
-                                    "name": "geometry",
-                                    "ioValue": "581d6b34-7f9e-4d36-9195-0b3f1f5adb9d"
-                                }
-                            ],
-                            "description": "Changes the color of the shape.",
+                            "ioValues": [],
                             "selectedColorIndex": 20
                         }
                     ],
@@ -1752,42 +2839,36 @@
                         {
                             "ap1Name": "geometry",
                             "ap2Name": "geometry",
-                            "ap2Primary": true,
                             "ap1ID": "8b9a64c1-fd62-43fb-83ef-7a3ac56ce714",
                             "ap2ID": "aa5574c7-73db-4db5-ba32-6bb024770e4a"
                         },
                         {
                             "ap1Name": "geometry",
                             "ap2Name": "Shape 1",
-                            "ap2Primary": false,
                             "ap1ID": "aa5574c7-73db-4db5-ba32-6bb024770e4a",
                             "ap2ID": "581d6b34-7f9e-4d36-9195-0b3f1f5adb9d"
                         },
                         {
                             "ap1Name": "geometry",
                             "ap2Name": "geometry",
-                            "ap2Primary": true,
                             "ap1ID": "64676eac-cf0c-4473-aafa-a67a152e464c",
                             "ap2ID": "42126d33-ee19-4903-bd04-d9e1eb39487f"
                         },
                         {
                             "ap1Name": "geometry",
                             "ap2Name": "Shape 2",
-                            "ap2Primary": false,
                             "ap1ID": "42126d33-ee19-4903-bd04-d9e1eb39487f",
                             "ap2ID": "581d6b34-7f9e-4d36-9195-0b3f1f5adb9d"
                         },
                         {
                             "ap1Name": "geometry",
                             "ap2Name": "geometry",
-                            "ap2Primary": true,
                             "ap1ID": "581d6b34-7f9e-4d36-9195-0b3f1f5adb9d",
                             "ap2ID": "68ac6206-a091-4f36-8dab-f9a7b26aab6c"
                         },
                         {
-                            "ap1Name": "geometry",
+                            "ap1Name": "color",
                             "ap2Name": "number or geometry",
-                            "ap2Primary": false,
                             "ap1ID": "68ac6206-a091-4f36-8dab-f9a7b26aab6c",
                             "ap2ID": "75a398f8-90bd-4e6d-9e0f-6f5b297d2579"
                         }
@@ -1815,330 +2896,141 @@
                     },
                     "unitsKey": "MM",
                     "fileTypeVersion": 1,
-                    "compiledBom": {}
-                },
-                {
-                    "atomType": "Move",
-                    "name": "Move",
-                    "x": 0.585978835978836,
-                    "y": 0.7611111111111112,
-                    "uniqueID": "4dea3125-9dec-4b90-977d-210c4fc1ee82",
-                    "ioValues": [
-                        {
-                            "name": "geometry",
-                            "ioValue": "97bb81cf-b2a6-49be-b4b8-bf1139d652cd"
-                        },
-                        {
-                            "name": "xDist",
-                            "ioValue": 15
-                        },
-                        {
-                            "name": "yDist",
-                            "ioValue": 0
-                        },
-                        {
-                            "name": "zDist",
-                            "ioValue": 0
-                        }
-                    ],
-                    "description": "Moves a shape laterally in X, Y, Z."
-                },
-                {
-                    "atomType": "Assembly",
-                    "name": "Assembly",
-                    "x": 0.7927807486631016,
-                    "y": 0.5446685878962536,
-                    "uniqueID": "26ecee4d-e8a9-40a8-8049-cfeb246337e7",
-                    "ioValues": [
-                        {
-                            "name": "Shape 1",
-                            "ioValue": "4dea3125-9dec-4b90-977d-210c4fc1ee82"
-                        },
-                        {
-                            "name": "Shape 3",
-                            "ioValue": "fec58716-684b-4794-84f9-9bd778765d7d"
-                        },
-                        {
-                            "name": "Shape 4",
-                            "ioValue": "828581cb-e32f-4b86-9877-b8c18ac0d55a"
-                        }
-                    ],
-                    "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
-                },
-                {
-                    "atomType": "Gcode",
-                    "name": "Gcode",
-                    "x": 0.5407754010695187,
-                    "y": 0.3371757925072046,
-                    "uniqueID": "2a0953f8-b41e-4d59-9f23-14034b46903a",
-                    "ioValues": [
-                        {
-                            "name": "Geometry",
-                            "ioValue": "cf9f00c2-54e8-4776-bca7-4c0ebb3a0531"
-                        },
-                        {
-                            "name": "Tool Size",
-                            "ioValue": 6.35
-                        },
-                        {
-                            "name": "Passes",
-                            "ioValue": 6
-                        },
-                        {
-                            "name": "Speed",
-                            "ioValue": 500
-                        },
-                        {
-                            "name": "Cut Through",
-                            "ioValue": 1
-                        },
-                        {
-                            "name": "Part Name",
-                            "ioValue": "Import Export"
-                        }
-                    ],
-                    "description": "Generates Maslow gcode from the input geometry.",
-                    "partName": "Import Export"
-                },
-                {
-                    "atomType": "Move",
-                    "name": "Move",
-                    "x": 0.6544117647058824,
-                    "y": 0.29971181556195964,
-                    "uniqueID": "fec58716-684b-4794-84f9-9bd778765d7d",
-                    "ioValues": [
-                        {
-                            "name": "geometry",
-                            "ioValue": "2a0953f8-b41e-4d59-9f23-14034b46903a"
-                        },
-                        {
-                            "name": "xDist",
-                            "ioValue": -15
-                        },
-                        {
-                            "name": "yDist",
-                            "ioValue": 0
-                        },
-                        {
-                            "name": "zDist",
-                            "ioValue": 0
-                        }
-                    ],
-                    "description": "Moves a shape laterally in X, Y, Z."
+                    "compiledBom": []
                 }
             ],
             "allConnectors": [
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "geometry",
-                    "ap2Primary": true,
                     "ap1ID": "17ac94ea-9915-4241-ae3a-06a4ab091228",
                     "ap2ID": "cf9f00c2-54e8-4776-bca7-4c0ebb3a0531"
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "geometry",
-                    "ap2Primary": false,
                     "ap1ID": "cf9f00c2-54e8-4776-bca7-4c0ebb3a0531",
                     "ap2ID": "8b0dd430-03e8-484c-bdf8-26859a13d47b"
                 },
                 {
                     "ap1Name": "geometry",
-                    "ap2Name": "Geometry",
-                    "ap2Primary": false,
+                    "ap2Name": "geometry",
                     "ap1ID": "cf9f00c2-54e8-4776-bca7-4c0ebb3a0531",
                     "ap2ID": "2a0953f8-b41e-4d59-9f23-14034b46903a"
                 },
                 {
-                    "ap1Name": "geometry",
+                    "ap1Name": "output",
                     "ap2Name": "geometry",
-                    "ap2Primary": true,
                     "ap1ID": "d06d8285-887a-44e7-ad04-c183203a2bf1",
                     "ap2ID": "828581cb-e32f-4b86-9877-b8c18ac0d55a"
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "Shape 4",
-                    "ap2Primary": false,
                     "ap1ID": "828581cb-e32f-4b86-9877-b8c18ac0d55a",
                     "ap2ID": "26ecee4d-e8a9-40a8-8049-cfeb246337e7"
                 },
                 {
-                    "ap1Name": "Geometry",
-                    "ap2Name": "geometry",
-                    "ap2Primary": true,
-                    "ap1ID": "97bb81cf-b2a6-49be-b4b8-bf1139d652cd",
-                    "ap2ID": "4dea3125-9dec-4b90-977d-210c4fc1ee82"
-                },
-                {
                     "ap1Name": "geometry",
                     "ap2Name": "Shape 1",
-                    "ap2Primary": false,
                     "ap1ID": "4dea3125-9dec-4b90-977d-210c4fc1ee82",
                     "ap2ID": "26ecee4d-e8a9-40a8-8049-cfeb246337e7"
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "number or geometry",
-                    "ap2Primary": false,
                     "ap1ID": "26ecee4d-e8a9-40a8-8049-cfeb246337e7",
                     "ap2ID": "c8329ef9-f657-4b81-a55a-bf298f0706ae"
                 },
                 {
-                    "ap1Name": "Gcode",
-                    "ap2Name": "geometry",
-                    "ap2Primary": true,
-                    "ap1ID": "2a0953f8-b41e-4d59-9f23-14034b46903a",
-                    "ap2ID": "fec58716-684b-4794-84f9-9bd778765d7d"
-                },
-                {
                     "ap1Name": "geometry",
                     "ap2Name": "Shape 3",
-                    "ap2Primary": false,
                     "ap1ID": "fec58716-684b-4794-84f9-9bd778765d7d",
                     "ap2ID": "26ecee4d-e8a9-40a8-8049-cfeb246337e7"
+                },
+                {
+                    "ap1Name": "geometry or number",
+                    "ap2Name": "geometry",
+                    "ap1ID": "97bb81cf-b2a6-49be-b4b8-bf1139d652cd",
+                    "ap2ID": "4dea3125-9dec-4b90-977d-210c4fc1ee82"
                 }
             ],
             "fileTypeVersion": 1,
             "compiledBom": {}
-        },
-        {
-            "atomType": "Move",
-            "name": "Move",
-            "x": 0.6263227513227514,
-            "y": 0.7333333333333334,
-            "uniqueID": "3352a0ec-8df2-4c40-b85a-cb4ca6657ef7",
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": "ceeeff44-be3b-46e2-a304-44f72cc4399a"
-                },
-                {
-                    "name": "xDist",
-                    "ioValue": 0
-                },
-                {
-                    "name": "yDist",
-                    "ioValue": -30
-                },
-                {
-                    "name": "zDist",
-                    "ioValue": 0
-                }
-            ],
-            "description": "Moves a shape laterally in X, Y, Z."
-        },
-        {
-            "atomType": "Move",
-            "name": "Move",
-            "x": 0.5848930481283422,
-            "y": 0.6109510086455331,
-            "uniqueID": "8e901b4d-e891-4b45-8826-1ffd32213f9e",
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": "6ca87a2c-5604-4e28-8e39-f4e3db22b39b"
-                },
-                {
-                    "name": "xDist",
-                    "ioValue": 0
-                },
-                {
-                    "name": "yDist",
-                    "ioValue": 29
-                },
-                {
-                    "name": "zDist",
-                    "ioValue": 0
-                }
-            ],
-            "description": "Moves a shape laterally in X, Y, Z."
         }
     ],
     "allConnectors": [
         {
-            "ap1Name": "Geometry",
-            "ap2Name": "Shape 1",
-            "ap2Primary": false,
-            "ap1ID": "f8f94c02-834a-4293-8741-cf5c02ca0626",
-            "ap2ID": "e06ea999-1ddb-4d47-82da-d3f96cb03fed"
-        },
-        {
             "ap1Name": "geometry",
             "ap2Name": "number or geometry",
-            "ap2Primary": false,
             "ap1ID": "e06ea999-1ddb-4d47-82da-d3f96cb03fed",
             "ap2ID": "fac857fe-e92a-4c1d-ac61-e8b0fc4e205c"
         },
         {
-            "ap1Name": "Geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": true,
-            "ap1ID": "6ca87a2c-5604-4e28-8e39-f4e3db22b39b",
-            "ap2ID": "8e901b4d-e891-4b45-8826-1ffd32213f9e"
-        },
-        {
-            "ap1Name": "Geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": true,
-            "ap1ID": "de21c536-2034-4063-9539-192a69c5981d",
-            "ap2ID": "4f7f7078-d932-4bd4-a14b-d9a726abafdf"
-        },
-        {
-            "ap1Name": "Geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": true,
-            "ap1ID": "c28c12bc-3be6-48af-99c5-73b1761296dc",
-            "ap2ID": "b0e28b43-a4ea-4b94-bcb6-e6e901f76dd0"
-        },
-        {
             "ap1Name": "geometry",
             "ap2Name": "Shape 2",
-            "ap2Primary": false,
             "ap1ID": "4f7f7078-d932-4bd4-a14b-d9a726abafdf",
             "ap2ID": "e06ea999-1ddb-4d47-82da-d3f96cb03fed"
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "Shape 3",
-            "ap2Primary": false,
             "ap1ID": "b0e28b43-a4ea-4b94-bcb6-e6e901f76dd0",
             "ap2ID": "e06ea999-1ddb-4d47-82da-d3f96cb03fed"
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "geometry",
-            "ap2Primary": true,
             "ap1ID": "30e7e952-806b-4632-a0fb-1b3c1b0871d0",
             "ap2ID": "20e1e580-4999-47c5-b72c-adb1e535a385"
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "Input Geometry",
-            "ap2Primary": false,
             "ap1ID": "20e1e580-4999-47c5-b72c-adb1e535a385",
             "ap2ID": "6ca87a2c-5604-4e28-8e39-f4e3db22b39b"
         },
         {
-            "ap1Name": "Geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": true,
-            "ap1ID": "ceeeff44-be3b-46e2-a304-44f72cc4399a",
-            "ap2ID": "3352a0ec-8df2-4c40-b85a-cb4ca6657ef7"
-        },
-        {
             "ap1Name": "geometry",
             "ap2Name": "Shape 4",
-            "ap2Primary": false,
             "ap1ID": "3352a0ec-8df2-4c40-b85a-cb4ca6657ef7",
             "ap2ID": "e06ea999-1ddb-4d47-82da-d3f96cb03fed"
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "Shape 5",
-            "ap2Primary": false,
             "ap1ID": "8e901b4d-e891-4b45-8826-1ffd32213f9e",
             "ap2ID": "e06ea999-1ddb-4d47-82da-d3f96cb03fed"
+        },
+        {
+            "ap1Name": "geometry or number",
+            "ap2Name": "Shape 1",
+            "ap1ID": "f8f94c02-834a-4293-8741-cf5c02ca0626",
+            "ap2ID": "e06ea999-1ddb-4d47-82da-d3f96cb03fed"
+        },
+        {
+            "ap1Name": "geometry or number",
+            "ap2Name": "geometry",
+            "ap1ID": "6ca87a2c-5604-4e28-8e39-f4e3db22b39b",
+            "ap2ID": "8e901b4d-e891-4b45-8826-1ffd32213f9e"
+        },
+        {
+            "ap1Name": "geometry or number",
+            "ap2Name": "geometry",
+            "ap1ID": "de21c536-2034-4063-9539-192a69c5981d",
+            "ap2ID": "4f7f7078-d932-4bd4-a14b-d9a726abafdf"
+        },
+        {
+            "ap1Name": "geometry or number",
+            "ap2Name": "geometry",
+            "ap1ID": "c28c12bc-3be6-48af-99c5-73b1761296dc",
+            "ap2ID": "b0e28b43-a4ea-4b94-bcb6-e6e901f76dd0"
+        },
+        {
+            "ap1Name": "geometry or number",
+            "ap2Name": "geometry",
+            "ap1ID": "ceeeff44-be3b-46e2-a304-44f72cc4399a",
+            "ap2ID": "3352a0ec-8df2-4c40-b85a-cb4ca6657ef7"
         }
     ],
     "unitsKey": "MM",
